@@ -90,15 +90,18 @@ a {
 a:hover {
     text-decoration: none;
 }
-p{
+
+p {
     color: var(--text-color);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
 }
 /*Header*/
 header {
     background-color: #FFF;
     padding:          0px;
     transition:       all 0.4s ease 0s;
-    height:           90px;
     display:          grid;
     align-items:      center;
     box-shadow:       0 3px 9px rgba(0, 0, 0, 0.05);
@@ -347,13 +350,14 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
     color:          var(--title-color);
     font-weight:    700;
 }
+
 .number-item p.counter {
-    font-size: 50px;
-    line-height: 1;
-    color: var(--primary);
-    font-weight: 700;
+    font-size:     50px;
+    line-height:   1;
+    color:         var(--primary);
+    font-weight:   700;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top:    10px;
 }
 
 
@@ -402,5 +406,60 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
 @media (min-width: 1280px) {
     .container {
         max-width: 1200px;
+    }
+}
+
+/*Header*/
+
+.navbar-toggler-icon.fa {
+    color:            #FFF !important;
+    line-height:      34px;
+    background-color: var(--primary);
+    border-radius:    5px;
+}
+
+.navbar-toggler {
+    padding: 0rem 0rem !important;
+}
+@media only screen and (max-width: 991px){
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+    .navbar-nav{
+        width: 100%;
+        padding: 20px 0;
+    }
+    a.nav-link{
+        margin:0;
+        padding: 8px 0 !important;
+        display: inline-block;
+    }
+    a.nav-link::before, a.dropdown-item::before {
+        bottom: 5px;
+    }
+    .dropdown.show a.nav-link::before{
+        display: none;
+    }
+    .dropdown-menu{
+        transform: translateX(0);
+        text-align: center;
+    }
+    button.navbar-toggler{
+        padding: 5px;
+        vertical-align: middle;
+    }
+    li.nav-item{
+        padding: 0 !important;
+        text-align: center;
+    }
+    .navbar-toggler .navbar-toggler-icon.icon-close{
+        display: none;
+    }
+    .navbar-toggler.collapsed .navbar-toggler-icon.icon-expand{
+        display: none !important;
+    }
+    .navbar-toggler.collapsed .navbar-toggler-icon.icon-close{
+        display: block!important;
     }
 }
