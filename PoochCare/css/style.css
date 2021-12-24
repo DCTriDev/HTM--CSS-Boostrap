@@ -99,7 +99,13 @@ header {
     background-color: white;
     z-index:          2;
     height:           90px;
+    transition:       all 0.5s ease;
     box-shadow:       0 3px 9px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+.header-responsive{
+    padding: 5px 0 !important;
+    height: 70px;
 }
 
 .navbar {
@@ -122,17 +128,17 @@ header {
     color: var(--primary-color) !important;
 }
 .navbar-nav .nav-link {
-    text-transform: capitalize;
-    transition:     all 0.5s ease;
-    padding:        14px 0;
-    font-size:      16px;
+    font-size:      1.2em;
     font-weight:    400;
+    padding:        14px 0;
+    transition:     all 0.5s ease;
+    text-transform: capitalize;
     color:          var(--title-color);
 }
 
 .navbar-nav .nav-item {
-    padding:    15px;
     position:   relative;
+    padding:    10px;
     transition: all 0.5s ease;
 }
 
@@ -140,36 +146,95 @@ header {
     display: none;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
+}
+
 .navbar-nav .nav-link, a.dropdown-item {
     color:   #333 !important;
     opacity: 0.95 !important;
+    margin: 0 auto;
+    transform: translateX(-50%);
 }
+
 .navbar-nav .nav-link:hover, a.dropdown-item:hover {
     color:      var(--primary-color) !important;
     background: white;
 }
-a.nav-link, a.dropdown-item{
-    position: relative;
-    padding-left: 0!important;
-    padding-right: 0!important;
+
+.navbar-nav .dropdown-menu:before {
+    position:      absolute;
+    z-index:       1001;
+    top:           -7px;
+    left:          49%;
+    display:       block;
+    width:         14px;
+    height:        14px;
+    content:       '';
+    transform:     translateX(-50%) rotateZ(45deg);
+    border:        1px solid rgba(0, 0, 0, 0.15);
+    border-right:  none;
+    border-bottom: none;
+    background:    #FFF;
 }
+
+a.nav-link, a.dropdown-item {
+    position:      relative;
+    padding-right: 0 !important;
+    padding-left:  0 !important;
+}
+
+a.dropdown-item {
+    font-weight: 400;
+    font-size:   1.2em;
+    position:    relative;
+    color:       var(--heading-color);
+    padding:     0 24px 14px !important;
+    display:     block;
+    width:       100px;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    background:    #FFFFFF;
+    border:        1px solid #DDDDDD;
+    min-width:     13rem;
+    padding:       1rem 0.3rem;
+    transform:     translateX(-40px) translateY(-20px);
+}
+
 a.nav-link::before, a.dropdown-item::before {
     position:   absolute;
-    content:    "";
-    background: var(--primary-color);
-    width:      0;
-    height:     2px;
-    left:       0;
     bottom:     13px;
+    left:       0;
+    width:      0;
+    height:     1px;
+    content:    "";
     transition: all 0.5s ease;
+    background: var(--primary-color);
+}
+
+a.dropdown-item::before {
+    left: 24px;
+}
+
+a.nav-link:before, a.dropdown-item:before {
+    bottom: 13px;
 }
 
 a.nav-link:hover::before, a.dropdown-item:hover::before {
     width: 100%;
 }
 
-.nav-item.active a.nav-link::before {
-    width: 100%;
+.dark-mode {
+    color:       var(--font-color);
+    font-size:   24px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.dark-mode-off {
+    display: none;
 }
 
 /*Carousel*/
@@ -203,35 +268,80 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
 .carousel-content{
     color: white !important;
 }
+
 .carousel .owl-dots {
+    position:   absolute;
+    right:      0;
+    bottom:     30px;
+    left:       0;
     margin-top: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 30px;
 }
-.owl-theme .owl-dots .owl-dot span{
-    width: 10px;
-    height: 10px;
-    margin: 0 7px;
-    background: #fff;
-    display: block;
+
+.owl-theme .owl-dots .owl-dot span {
+    position:                    relative;
+    display:                     block;
+    width:                       10px;
+    height:                      10px;
+    margin:                      0 7px;
+    transition:                  opacity .2s ease;
+    opacity:                     0.9;
+    border-radius:               25px;
+    background:                  #FFF;
     -webkit-backface-visibility: visible;
-    transition: opacity .2s ease;
-    border-radius: 25px;
-    position: relative;
-    opacity: 0.9;
 }
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
+    width:      30px;
+    height:     10px;
     background: var(--primary-color);
-    width: 30px;
-    height: 10px;
 }
+
+.active-btn, .active-btn:hover {
+    font-size:        18px;
+    font-weight:      400;
+    line-height:      28px;
+    padding:          12px 35px;
+    transition:       0.3s ease-in;
+    color:            var(--primary-color);
+    border-radius:    8px;
+    background-color: white;
+}
+
+.none-active-btn {
+    font-size:     18px;
+    font-weight:   400;
+    line-height:   28px;
+    padding:       10px 35px;
+    transition:    0.3s ease-in;
+    color:         white;
+    border:        2px solid #FFF;
+    border-radius: 8px;
+}
+
+.none-active-btn:hover {
+    color:      var(--primary-color);
+    background: white;
+}
+
 /*About*/
 .about-content {
     max-width: 700px;
     margin:    0 auto;
+}
+
+.carousel-content .inner {
+    max-width: 700px;
+}
+
+.carousel-content h5, .carousel-content p {
+    color: white;
+}
+
+.carousel-content h5 {
+    font-size:   66px;
+    font-weight: 700;
+    line-height: 76px;
 }
 
 /*Feature*/
@@ -271,6 +381,7 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
 .service-left img {
     max-width: 100%;
     height:    auto;
+    border-radius: 10px;
 }
 
 .service-right p {
@@ -327,48 +438,104 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
     font-weight: 400;
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width:     100%;
-        padding-right: 30px;
-        padding-left:  30px;
-        margin-right:  auto;
-        margin-left:   auto;
-    }
+.position-center {
+
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width:     100%;
-        padding-right: 25px;
-        padding-left:  25px;
-        margin-right:  auto;
-        margin-left:   auto;
-    }
+
+
+.navbar-toggler-icon.fa {
+    line-height:      30px;
+    color:            #FFF !important;
+    border-radius:    5px;
+    background-color: var(--primary-color);
 }
 
-@media (min-width: 992px) {
-    .container {
-        max-width:     100%;
-        padding-right: 25px;
-        padding-left:  25px;
-        margin-right:  auto;
-        margin-left:   auto;
-    }
+.navbar-toggler {
+    padding: 0!important;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width:     100%;
-        padding-right: 25px;
-        padding-left:  25px;
-        margin-right:  auto;
-        margin-left:   auto;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
+@media screen and (min-width: 1280px) {
+    .container{
         max-width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header {
+        height: 70px;
+        transition:       all 0.5s ease;
+        box-shadow:       0 3px 9px rgba(0, 0, 0, 0.05);
+        padding: -5px 0;
+    }
+    .header-responsive{
+        padding: 5px 0 !important;
+        height: 60px;
+    }
+
+    .navbar-nav {
+        width:   100%;
+        padding: 20px 0;
+    }
+
+    a.nav-link {
+        display: inline-block;
+        margin:  0;
+        padding: 8px 0 !important;
+    }
+
+    a.nav-link::before {
+        bottom: 5px;
+    }
+
+    .dropdown.show a.nav-link::before {
+        display: none;
+    }
+
+    .dropdown-menu {
+        transform:  translateX(0);
+        text-align: center;
+    }
+
+    a.nav-link::before {
+        display: none;
+    }
+
+    button.navbar-toggler {
+        padding:        5px;
+        vertical-align: middle;
+    }
+
+    li.nav-item {
+        padding:    0 !important;
+        text-align: center;
+    }
+
+    .icon-expand, .icon-close {
+        line-height: 30px;
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon.icon-close {
+        display: none;
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon.icon-expand {
+        display: block;
+    }
+
+    .navbar-toggler .navbar-toggler-icon.icon-close {
+        display: block;
+    }
+
+    .navbar-toggler .navbar-toggler-icon.icon-expand {
+        display: none;
+    }
+
+    .dark-mode {
+        position: absolute;
+        top:      10px;
+        right:    40px;
     }
 }
