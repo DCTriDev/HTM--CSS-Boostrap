@@ -1,7 +1,7 @@
 // Slick
 $(".banner-slider").slick({
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 3000,
   infinite: true,
   speed: 300,
   prevArrow: '<button class="banner-slickPrev"></button>',
@@ -17,4 +17,12 @@ $(window).scroll(function () {
     $("#site-header").removeClass("whiteHeader");
   }
 });
-// 
+// header-search
+var btnSearchEl = document.querySelector("header .header-search .btn-material");
+btnSearchEl.addEventListener("click", function () {
+  document.getElementsByTagName("body")[0].classList.add("search-active");
+});
+var btnCloseEl = document.querySelector("header .header-search .icon-close");
+btnCloseEl.addEventListener("click", function () {
+  document.getElementsByTagName("body")[0].classList.remove("search-active");
+});
