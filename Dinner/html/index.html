@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Porfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../js/index.js">
+</head>
+
+<body>
+    <section id="header">
+        <nav class="navbar ">
+            <div class="container">
+                <a class="navbar-brand h1">Diner</a>
+                <div class="nav__content row position-relative">
+                    <div class="search-bar position-absolute">
+                        <form class="form-inline border-white">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here.."
+                                aria-label="Search" onload="equalWidth()">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                    <!-- Start phan dark mode  -->
+                    <div class="dark-mode p-2 text-white mr-2">
+                        <i class="far fa-moon "></i>
+                        <!-- <i class="far fa-sun"></i>  -->
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav"
+                        aria-controls="navMenu" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon navbar-expand-lg bg-white"></span> -->
+                        <i class="fa fa-bars text-white"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="main">
+        <!-- Phần parallax -->
+        <div class="parallax">
+            <div class="container">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">The Only Thing We <br>
+                            Love More Than Food <br>
+                            Is You!</h5>
+                        <p class="card-text mt-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Molestias nemo
+                            fuga
+                            omnis, alias saepe explicabo.</p>
+                        <a href="#" class="btn btn-white">Read More
+                            <span class="fa fa-chevron-right ml-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Parallax -->
+    </section>
+
+    <section class="blog container bg-white">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-title">About Us</p>
+                        <h3 class="card-text">We found our creative space that is open for you.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                            ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad.
+                            Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+                            culpa!Lorem ipsum init dolor sit.</p>
+                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                            ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad.
+                            Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking ">
+        <div class="card ">
+            <div class="row no-gutters">
+                <div class="card-image col-6 ">
+                    <img src="../img/banner3.jpg" class="card-img" alt="Hinh banner 3">
+                </div>
+                <div class="col-6">
+                    <div class="card-body left__block ">
+                        <h5 class="card-title">more than 3000 Restaurants</h5>
+                        <p class="card-text text__1">Book a table easly at the best price</p>
+                        <p class="card-text text__2">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales
+                            quis.
+                            Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                        </p>
+                        <div class="blog__card row">
+                            <div class="col-6 p-0">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="card-icon bg-white">
+                                            <i class="fa fa-thumbs-up"></i>
+                                        </div>
+                                        <a class="blog__link mt-3 mb-3" href="#">Best Deals</a>
+                                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 blog__card">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="card-icon bg-white">
+                                            <i class="fa fa-utensils"></i>
+                                        </div>
+                                        <a href="#" class="blog__link mt-3 mb-3">Best Food</a>
+                                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="header-tittle ">
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

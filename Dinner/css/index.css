@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Quicksand', sans-serif;
+    color:black;
+    line-height: 1.5;
+}
+#header{
+    position: absolute;
+    width: 100%;
+}
+#header .navbar a{
+    color: white !important;
+    font-size: 36px;  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav__content{
+    right:1.25rem;
+}
+.navbar{
+    padding: 30px 0;
+}
+.search-bar{
+    right:5rem;
+}
+.search-bar .form-inline {
+    position: relative;
+    border:none;
+    font-size: 1rem;
+    /* justify-content: space-between; */
+}
+.form-inline .form-control{
+    border: none;
+    padding-right: 50px;
+}  
+.search-bar .form-inline i{
+    position:absolute;
+    right:20px;
+    color:rgba(22, 28, 45, 0.7);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Start phan dark mode  */
+/* End phan dark mode  */
+
+
+/* Start Parallax */
+.parallax{
+    background: linear-gradient(to right,rgba(255, 102, 0),rgba(5, 2, 0, 0)),
+     url("../img/banner1.jpg");
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px 100px;
+}
+.parallax .card{
+    background: none;
+    border:none;
+    color:white;
+}
+.parallax .card h5{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.parallax .card p{
+    font-size: 1rem;
+    line-height: 28px;
+}
+.parallax .card-body a{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    cursor: pointer;  
+    transition: 0.3s ease-in;
+    color: white;
+}
+.parallax .card-body a:hover{
+    color: #ff6600;
+    background: white;
+}
+/* End Parallax */
+
+/* Start phan blog */
+.blog .card .card-body .card-title {
+    font-family: 'Pacifico', cursive;
+    color:#ff6600;
+}
+.blog .row{
+    padding:70px 0;
+}
+.blog .row .card{
+    border:none;
+}
+.blog .row .card h3{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.blog .row .card p{
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand', sans-serif;
+    text-align:justify;
+}
+/* End phan blog */
+
+/* Start phan booking */
+.booking .card-img{
+    transform: scale(1.32);
+    height: 600px;
+    height: 100%;
+    align-items: center;
+}
+.booking .card-image{
+    overflow: hidden;
+}
+/* .booking .card-image{
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: rgb(16 15 19 / 46%)
+} */
+
+.booking .card-body{
+    background: #ff6600;
+    text-align: justify;
+    
+    
+    /* padding: 30px 30px; */
+    
+}
+.booking .card-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color:white;
+    font-family: 'Pacifico', cursive;
+}
+.booking .card-body.left__block{
+    height: 600px;
+    padding-top: 110px;
+}
+.booking .card-body .text__1{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #232121;
+}
+.booking .card-body .text__2{
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffdfc9;
+}
+.blog__card .card-icon{
+    border-radius: 5px;
+    color:#ff6600;
+    font-size:25px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 1rem 0;
+    padding:12px;
+    
+}
+.blog__card .card-icon:hover{
+    color:#ffc600;
+    transition-duration: 0.3s;   
+}
+.blog-card .card{
+    border:none;
+}
+.blog__card p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffdfc9;
+}
+.blog__card a{
+    font-size: 18px;
+    line-height: 28px;
+    color: #232121;
+    font-weight: 600;
+    
+}
+
+margin-bottom: 1.5
+rem
+
+/* End phan booking */
