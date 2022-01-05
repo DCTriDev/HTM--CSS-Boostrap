@@ -1,13 +1,21 @@
-// Slick
+// Slick Header
+// Slick Header
 $(".images-inner").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   dots: true,
-
   infinite: true,
   prevArrow: "none",
   nextArrow: "none",
 });
+// Slick Testimonials
+$(".owl-stage").slick({
+  autoplay: false,
+  dots: true,
+  infinite: true,
+  arrows: false,
+});
+
 // Sticky header
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -17,13 +25,4 @@ $(window).scroll(function () {
   } else {
     $("#site-header").removeClass("whiteHeader");
   }
-});
-// header-search
-var btnSearchEl = document.querySelector("header .header-search .btn-material");
-btnSearchEl.addEventListener("click", function () {
-  document.getElementsByTagName("body")[0].classList.add("search-active");
-});
-var btnCloseEl = document.querySelector("header .header-search .icon-close");
-btnCloseEl.addEventListener("click", function () {
-  document.getElementsByTagName("body")[0].classList.remove("search-active");
 });
