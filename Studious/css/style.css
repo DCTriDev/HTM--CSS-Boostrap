@@ -17,7 +17,6 @@
     --bg-color-li: rgb(13 54 159 / 9%);
     --bg-light: #F8F9FF;
     --border-color-light: #EEE;
-    --box-shadow-color: rgb(4 20 69 / 10%);
 }
 
 body {
@@ -47,10 +46,6 @@ li {
 ul {
     margin: 0;
     padding: 0;
-}
-
-.d-grid {
-    display: grid !important;
 }
 
 .container {
@@ -152,10 +147,9 @@ h3.title-main:after {
 
 .btn-style-secondary:hover {
     background: var(--primary-color);
-    color: #FFF;
+    color: #fff;
     transition: 0.3s ease-out;
 }
-
 /*Header*/
 header .container {
     max-width: 100%;
@@ -397,7 +391,6 @@ p.feature-text {
 .course {
     background: var(--bg-light);
 }
-
 .course .blog-card-single:hover {
     transition: all .4s ease;
     box-shadow: 0 15px 30px rgb(29 23 77 / 8%);
@@ -442,7 +435,7 @@ p.feature-text {
 }
 
 .meta-list a:nth-child(3) {
-    background: #037EF3;
+    background: #037ef3;
 }
 
 .course-price-item {
@@ -504,26 +497,23 @@ ul.rating-list li {
 }
 
 ul.rating-list li a {
-    color: #FFC949;
+    color: #ffc949;
     font-size: 15px;
 }
 
 /*Service*/
-.service {
+.service{
     background: url(../img/bg3.jpg) no-repeat bottom;
     background-size: cover;
 }
-
 .service .service-item {
     background: white;
     padding: 30px;
     border-radius: 8px;
 }
-
 .service .icon {
     margin-right: 1em;
 }
-
 .service .icon i {
     color: var(--primary-color);
     font-size: 28px;
@@ -534,8 +524,7 @@ ul.rating-list li a {
     border-radius: 50%;
     text-align: center;
 }
-
-.service h5 {
+.service  h5 {
     font-size: 20px;
     line-height: 30px;
     color: var(--heading-color);
@@ -547,7 +536,6 @@ ul.rating-list li a {
 .number .counter {
     border-right: 1px solid var(--border-color-light);
 }
-
 .number .timer {
     font-size: 46px;
     font-weight: 600;
@@ -558,62 +546,6 @@ p.count-text {
     text-transform: uppercase;
     color: var(--heading-color);
 }
-
-/**/
-.testimonials-content {
-    background: var(--bg-color);
-    border-radius: 4px;
-    box-shadow: 0 20px 62px var(--box-shadow-color);
-    padding: 2rem;
-}
-
-.sub-test q::before {
-    font-size: 50px;
-    color: var(--secondary-color);
-    font-family: initial;
-    line-height: .8;
-    padding-top: 8px;
-    display: inline-block;
-}
-
-.sub-author {
-    grid-template-columns: 0.3fr 1fr;
-    align-items: center;
-    grid-gap: 5px;
-    margin-top: 1.5em;
-}
-
-.testimonials-img img {
-    border-radius: 50%;
-}
-
-.text-author h5 {
-    font-weight: 600;
-    line-height: 16px;
-}
-
-.text-author p {
-    font-size: 13px;
-    color: var(--font-color);
-}
-
-/*Team*/
-.team-items{
-    box-shadow: 0 20px 62px var(--box-shadow-color);
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-}
-.team-items .team-grids {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-.team-items .team-grids img {
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-}
-
 /*Responsive*/
 
 /*Container*/
