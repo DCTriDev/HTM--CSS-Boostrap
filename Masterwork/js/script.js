@@ -17,8 +17,5 @@ function scrollFunction() {
 }
 
 document.querySelector('#back-to-top').addEventListener('click', function () {
-    topFunction()
-})
-function topFunction() {
     window.scrollTo({top: 0, behavior: "smooth"})
-}
+})
