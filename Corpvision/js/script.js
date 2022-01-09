@@ -10,13 +10,15 @@ $(".banner-slider").slick({
 // Sticky header
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-
   if (scroll >= 100) {
     $("#site-header").addClass("whiteHeader");
+    document.querySelector("#movetop").style.display = "block";
   } else {
     $("#site-header").removeClass("whiteHeader");
+    document.querySelector("#movetop").style.display = "none";
   }
 });
+
 // header-search
 var btnSearchEl = document.querySelector("header .header-search .btn-material");
 btnSearchEl.addEventListener("click", function () {
@@ -37,17 +39,17 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        nav: false
+        nav: false,
       },
       768: {
         items: 1,
-        nav: false
+        nav: false,
       },
       1000: {
         items: 1,
         nav: false,
-        loop: false
-      }
-    }
-  })
-})
+        loop: false,
+      },
+    },
+  });
+});
