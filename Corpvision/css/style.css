@@ -614,6 +614,15 @@ section.gallery a:hover span.hover-content .title {
 .grids5-info a.btn-style1:hover {
   color: var(--primary-color);
 }
+.grids5-info a {
+  font-family: "Jost", sans-serif;
+  padding: 8px 35px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-radius: var(--border-radius);
+}
 .company-logos {
   border-top: 1px solid var(--border-color-light);
 }
@@ -762,6 +771,16 @@ section.gallery a:hover span.hover-content .title {
   margin-bottom: 1.5em;
   margin: 0 0 1rem;
 }
+.w3l-testimonials blockquote q {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  opacity: 0.8;
+}
+.w3l-testimonials blockquote q::after,
+.w3l-testimonials blockquote q::before {
+  content: "";
+}
 .testi-des {
   display: grid;
   grid-auto-flow: column;
@@ -789,6 +808,7 @@ section.gallery a:hover span.hover-content .title {
   font-size: 20px;
 }
 .w3l-testimonials p.indentity {
+  color: #666;
   font-style: normal;
   margin-bottom: 0;
   opacity: 0.8;
@@ -851,6 +871,10 @@ section.gallery a:hover span.hover-content .title {
   overflow: hidden;
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
+}
+
+#Newsblog .card:hover .card-footer > div > a > img {
+  transform: none;
 }
 
 .w3l-blog .price-review p a,
@@ -928,7 +952,7 @@ ul.blog-meta li {
   text-decoration: none;
   transition: all 0.5s;
 }
-/* End section */
+/* End blog */
 /* Newsletter */
 .w3l-project {
   background-image: url(../img/map.png);
@@ -1006,6 +1030,7 @@ form.subscribe {
 /* End Newsletter */
 /* Footer */
 .w3l-footer-29-main {
+  font-family: "Jost", sans-serif;
   background: #151421;
   border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
@@ -1033,6 +1058,7 @@ form.subscribe {
 }
 .w3l-footer-29-main p {
   font-size: 18px;
+  margin-bottom: 0;
   line-height: 28px;
   color: #97a1a9;
 }
@@ -1058,6 +1084,11 @@ form.subscribe {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+section.w3l-copyright {
+  padding: 1.5em 0;
+  border-top: 1px solid rgba(249, 249, 249, 0.1);
+}
+
 .w3l-footer-29-main .footer-list-29 ul li a,
 .w3l-footer-29-main .footer-list-29 ul li p,
 .w3l-copyright .footer-list-29 ul li a,
@@ -1086,6 +1117,9 @@ form.subscribe {
 }
 .w3l-copyright .copy-footer-29 a {
   color: var(--primary-color);
+}
+.w3l-copyright .copy-footer-29 a:hover {
+  color: #fff;
 }
 .w3l-copyright #movetop {
   display: none;
