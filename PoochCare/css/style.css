@@ -459,6 +459,10 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
     background-color: white;
 }
 
+.feature-item:hover{
+    background: var(--bg-light);
+}
+
 .feature .icon span.fa {
     font-size: 30px;
     color:     var(--primary-color);
