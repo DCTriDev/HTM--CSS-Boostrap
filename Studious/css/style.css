@@ -893,6 +893,27 @@ footer .copyright-footer p a:hover {
     color: white;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    padding: 0;
+}
+
+#back-to-top:hover{
+    opacity: .8;
+}
+
 /*Responsive*/
 
 /*Container*/

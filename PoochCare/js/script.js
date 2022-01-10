@@ -2,6 +2,7 @@ window.onscroll = function () {
     scrollFunction()
 };
 let header = document.querySelector("header")
+let backToTop = document.getElementById("back-to-top")
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 
@@ -10,12 +11,12 @@ function scrollFunction() {
         header.classList.remove("nav-fixed")
     }
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("back-to-top").style.display = "block";
+        backToTop.style.display = "block";
     } else {
-        document.getElementById("back-to-top").style.display = "none";
+        backToTop.style.display = "none";
     }
 }
 
-document.querySelector('#back-to-top').addEventListener("click", function () {
+backToTop.addEventListener("click", function () {
     window.scrollTo({top: 0, behavior: "smooth"})
 })
