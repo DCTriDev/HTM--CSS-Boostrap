@@ -804,7 +804,7 @@ footer .sub-columns ul li a {
     display:     block;
 }
 
-footer .sub-columns ul li a:hover {
+footer .sub-columns ul li a:hover, footer .sub-columns ul li a span {
     color: white;
 }
 
