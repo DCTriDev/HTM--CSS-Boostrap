@@ -209,6 +209,11 @@ header .container, #header .container {
     transition:    all 0.5s ease 0s;
     padding-left:  15px !important;
     padding-right: 15px !important;
+    background: var(--bg-color);
+}
+
+#header .navbar-brand img {
+    margin-right: 5px;
 }
 
 .top-fixed {
@@ -264,7 +269,7 @@ header .container, #header .container {
     transition: var(--transition-custom);
 }
 
-#header .navbar-nav a.nav-link:hover, header a:hover, header .nav-item.active a.nav-link {
+#header .navbar-nav a.nav-link:hover, header a:hover, #header .nav-item.active a.nav-link {
     color: var(--secondary-color) !important;
 }
 
@@ -894,25 +899,45 @@ footer .copyright-footer p a:hover {
 }
 
 #back-to-top {
-    position: fixed;
-    bottom: 90px;
-    right: 15px;
-    z-index: 9;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
+    position:      fixed;
+    bottom:        90px;
+    right:         15px;
+    z-index:       9;
+    font-size:     16px;
+    border:        none;
+    outline:       none;
+    cursor:        pointer;
+    color:         #FFF;
+    width:         40px;
+    height:        40px;
+    background:    var(--primary-color);
     border-radius: 4px;
-    padding: 0;
+    padding:       0;
 }
 
-#back-to-top:hover{
+#back-to-top:hover {
     opacity: .8;
 }
+
+#btn-dark-mode {
+    cursor:     pointer;
+    color:      var(--primary-color);
+    font-size:  25px;
+    margin-top: -5px;
+}
+
+#btn-dark-mode:hover {
+    color: var(--secondary-color);
+}
+
+.dark-mode-on, .dark-mode-active .dark-mode-off {
+    display: block;
+}
+
+.dark-mode-off, .dark-mode-active .dark-mode-on {
+    display: none;
+}
+
 
 /*Responsive*/
 
