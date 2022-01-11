@@ -59,6 +59,7 @@ p {
   font-size: 17px;
   line-height: 27px;
   color: var(--font-color);
+  font-family: var(--source-font);
 }
 body,
 button,
@@ -834,6 +835,61 @@ a.testi-img {
 
 /* End back to Top */
 /*============================Responsive=============================*/
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* start */
+  .navbar .navbar-brand.index-responsive-color {
+    color: #fff;
+  }
+  .banner-left {
+    left: 0em;
+    padding: 2em;
+  }
+  .banner-left-content {
+    background: var(--bg-color);
+    padding: 3em 2em 2em 4em;
+    border-radius: 8px;
+  }
+  .banner-left h2 {
+    font-size: 80px;
+  }
+  .w3l-banner h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  header.whiteHeader .navbar .navbar-brand,
+  .w3l-footer-16 a.logo {
+    color: var(--primary-color);
+  }
+  h5.small-title {
+    font-size: 18px;
+  }
+  .title-style {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  /* end */
+}
 
 /*============================Animation=============================*/
 @keyframes shine {
