@@ -24,12 +24,11 @@
   --layer: rgba(29, 42, 55, 0.7);
   --apple-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --Jost-font: "Jost", sans-serif;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Jost", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -505,6 +504,9 @@ section.gallery a:hover span.hover-content .title {
   position: relative;
   font-family: var(--apple-font);
 }
+.w3l-homeblock1 ul.service-list li a:hover {
+  text-decoration: none;
+}
 .w3l-homeblock1 ul.service-list li a span.fa {
   color: var(--primary-color);
   margin-right: 5px;
@@ -894,11 +896,11 @@ section.gallery a:hover span.hover-content .title {
   font-weight: 600;
   color: var(--heading-color);
   margin-top: 10px;
+  transition: 0.5s all;
 }
 .w3l-blog a.blog-desc:hover {
   color: var(--primary-color);
   text-decoration: none;
-  transition: 0.5s all;
 }
 .card-footer {
   padding: 0.75rem 1.25rem;
@@ -1061,6 +1063,8 @@ form.subscribe {
   margin-bottom: 0;
   line-height: 28px;
   color: #97a1a9;
+  font-family: var(--Jost-font);
+  opacity: 0.8;
 }
 
 .main-social-footer-29 a {
