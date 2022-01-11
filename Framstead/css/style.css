@@ -28,6 +28,7 @@
   --icon-gra-color: linear-gradient(75deg, #1c2e7b 10%, #e60264);
   --shadow-color: rgb(0 0 0 / 3%);
   --box-shadow: rgb(0 0 0 / 41%);
+  --source-font: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -40,10 +41,18 @@ body {
   text-align: left;
   background-color: #fff;
 }
-
-h1 {
-  font-size: 2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: "Volkhov", serif;
 }
+
 p {
   margin: 0;
   padding: 0;
@@ -117,6 +126,9 @@ header.whiteHeader ul#menu label {
   cursor: pointer;
   color: #666;
 }
+#demo-2 input[type="search"]::placeholder {
+  color: transparent;
+}
 #demo-2 input[type="search"]:focus {
   width: 200px;
   padding-left: 32px;
@@ -124,6 +136,18 @@ header.whiteHeader ul#menu label {
   background-color: #fff;
   cursor: auto;
   padding-right: 15px;
+  outline: none;
+}
+.banner-w3ls-1:before,
+.banner-w3ls-2:before,
+.banner-w3ls-3:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 17%);
+  z-index: -1;
+  top: 0;
 }
 .theme-switch-wrapper {
   display: flex;
@@ -238,12 +262,15 @@ ul.submenu li.current_page_item a {
   margin-left: -0.5em;
 }
 .w3l-banner h3 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 50px;
   font-weight: bold;
 }
 p.banner-text {
   font-size: 20px;
+  line-height: 27px;
+  color: var(--font-color);
+  font-family: var(--source-font);
 }
 .btn-style {
   font-size: 16px;
@@ -257,6 +284,10 @@ p.banner-text {
   border-radius: 30px;
   transition: all 0.5s ease-in-out;
   font-family: "Source Sans Pro", sans-serif;
+}
+.btn-style:hover {
+  background: var(--secondary-color);
+  color: #fff;
 }
 /* right Banner */
 .st-slider {
@@ -450,6 +481,9 @@ a.service-heading {
   margin: 15px 0;
   font-family: "Source Sans Pro", sans-serif;
 }
+a.service-heading:hover {
+  color: var(--secondary-color);
+}
 
 .grids_info span.fa {
   font-size: 30px;
@@ -520,6 +554,10 @@ a.service-heading {
   font-weight: 600;
   color: var(--heading-color);
   font-family: "Volkhov", serif;
+  transition: 0.3s ease-in;
+}
+.w3l-index-block4 .feature-unit:hover h4 {
+  color: var(--secondary-color);
 }
 .w3l-index-block4 .features15-para p {
   margin-top: 10px;
@@ -643,6 +681,9 @@ a.testi-img {
   font-weight: 600;
   display: inline-block;
 }
+.testimonial-row {
+  position: relative;
+}
 .w3l-clients-1 blockquote q {
   font-size: 22px;
   line-height: 34px;
@@ -653,7 +694,13 @@ a.testi-img {
 }
 #owl-demo2 ul.slick-dots {
   margin-top: 70px;
-  position: relative;
+  position: absolute;
+  bottom: -80px;
+}
+#owl-demo2 ul.slick-dots li:hover {
+  background: var(--primary-color);
+  opacity: 1;
+  cursor: pointer;
 }
 #owl-demo2 ul.slick-dots li {
   background: #fff;
@@ -677,6 +724,7 @@ a.testi-img {
   object-position: center;
 }
 /* End Testimonials */
+
 /* Footer */
 .w3l-footer-16 .w3l-footer-16-main h3 {
   font-size: 20px;
@@ -756,6 +804,11 @@ a.testi-img {
   font-size: 15px;
   line-height: 35px;
 }
+.w3l-footer-16 ul.social li a:hover {
+  color: var(--primary-color);
+  background: rgb(255 201 69 / 19%);
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
 /* End Footer */
 /* Btn back to Top */
 #movetop {
@@ -775,6 +828,10 @@ a.testi-img {
   padding: 0;
   display: none;
 }
+#movetop:hover {
+  opacity: 0.8;
+}
+
 /* End back to Top */
 /*============================Responsive=============================*/
 
