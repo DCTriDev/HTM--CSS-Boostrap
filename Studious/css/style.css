@@ -954,3 +954,43 @@ footer .copyright-footer p a:hover {
     }
 }
 
+@media screen and (max-width: 1200px){
+    #header .navbar-nav .nav-link{
+        font-size: 14px;
+        margin-right: -2px ;
+    }
+    .carousel h5 {
+        font-size: 57px;
+        line-height: 67px;
+    }
+
+    .banner h4 a.title-head{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    header{
+        display: none;
+    }
+
+    #header{
+        padding: 10px !important;
+    }
+
+    .banner h4 a.title-head{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .carousel h5{
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
+
+
+
