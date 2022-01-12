@@ -631,6 +631,9 @@ section.gallery a:hover span.hover-content .title {
 .company-logos img {
   padding: 0 18px;
 }
+.justify-content-center {
+  justify-content: center !important;
+}
 /* start progress bar */
 .w3l-progress .progress-info {
   margin-bottom: 30px;
@@ -778,6 +781,7 @@ section.gallery a:hover span.hover-content .title {
   line-height: 28px;
   color: var(--font-color);
   opacity: 0.8;
+  font-family: var(--Jost-font);
 }
 .w3l-testimonials blockquote q::after,
 .w3l-testimonials blockquote q::before {
@@ -1148,46 +1152,16 @@ section.w3l-copyright {
 /* End Footer */
 /*============================Responsive=============================*/
 /*container*/
-@media (min-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding: 0 25px;
-    margin-right: auto;
-    margin-left: auto;
+/* other elements */
+@media only screen and (max-width: 991px) {
+  .navbar-toggler-icon.fa {
+    font-size: 20px;
+    line-height: 1.2em;
+    color: #fff;
+    line-height: 34px;
   }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1200px;
+  .navbar-toggler-icon.fa::before {
+    content: "";
   }
 }
