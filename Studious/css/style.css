@@ -209,7 +209,7 @@ header .container, #header .container {
     transition:    all 0.5s ease 0s;
     padding-left:  15px !important;
     padding-right: 15px !important;
-    background: var(--bg-color);
+    background:    var(--bg-color);
 }
 
 #header .navbar-brand img {
@@ -256,6 +256,10 @@ header .container, #header .container {
     padding:    0 12px;
     transition: var(--transition-custom);
     position:   relative;
+}
+
+#header .navbar-light .navbar-toggler-icon {
+    background-image: none !important;
 }
 
 #header .navbar-nav .nav-link {
@@ -942,6 +946,26 @@ footer .copyright-footer p a:hover {
 /*Responsive*/
 
 /*Container*/
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -954,40 +978,156 @@ footer .copyright-footer p a:hover {
     }
 }
 
-@media screen and (max-width: 1200px){
-    #header .navbar-nav .nav-link{
-        font-size: 14px;
-        margin-right: -2px ;
+@media screen and (max-width: 1200px) {
+    #header .navbar-nav .nav-link {
+        font-size:    14px;
+        margin-right: -2px;
     }
+
     .carousel h5 {
-        font-size: 57px;
+        font-size:   57px;
         line-height: 67px;
     }
 
-    .banner h4 a.title-head{
+    .banner h4 a.title-head {
         margin-top: 20px;
-        font-size: 20px;
+        font-size:  20px;
     }
 }
 
-@media screen and (max-width: 991px){
-    header{
+@media screen and (max-width: 991px) {
+    header {
         display: none;
     }
 
-    #header{
-        padding: 10px !important;
+    #header {
+        padding: 10px 0 !important;
     }
 
-    .banner h4 a.title-head{
+    #header .navbar-toggler.collapsed .navbar-toggler-icon.icon-close {
+        display: none;
+    }
+
+    #header .navbar-toggler.collapsed .navbar-toggler-icon.icon-expand {
+        display: block;
+    }
+
+    #header .navbar-toggler .navbar-toggler-icon.icon-close {
+        display: block;
+    }
+
+    #header .navbar-toggler .navbar-toggler-icon.icon-expand {
+        display: none;
+    }
+
+    #header .dark-mode-btn {
+        position: absolute;
+        top:      15px;
+        right:    50px;
+    }
+
+    button.navbar-toggler {
+        padding:    2px !important;
+        font-size:  24px;
+        border:     0 none !important;
+        background: var(--primary-color);
+    }
+
+    button.navbar-toggler span.navbar-toggler-icon {
+        align-self:  center;
+        font-size:   20px;
+        color:       #FFF;
+        line-height: 32px;
+    }
+
+    #header ul.navbar-nav {
+        -webkit-animation-name: none;
+        animation-name:         none;
+        float:                  left;
+        text-align:             center;
+        width:                  100%;
+        padding:                20px;
+        margin-top:             16px;
+    }
+
+    #header .navbar-collapse {
+        background: var(--bg-color);
+        box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    }
+
+    #header .navbar-nav:last-child {
+        border: 1px solid var(--border-color);
+    }
+
+    #header .navbar-nav li.nav-item {
+        padding: 4px 0;
+    }
+    #header .search-right{
+        text-align: center;
+    }
+    #header .search-right input{
+        width: 220px !important;
+        margin: -15px auto 10px auto !important;
+        transform: translateY(-10px);
+    }
+
+    #header button.search-btn{
+        top: 240px;
+        right: 37%;
+        height: 40px !important;
+    }
+
+    #header .navbar-nav .nav-link {
+        padding:    2px 10px;
+        text-align: center;
+        font-size:  15px;
+    }
+
+    .carousel{
+        padding: 2rem 0;
+        margin-top: -6rem;
+    }
+
+    .banner h4 a.title-head {
         font-size: 25px;
+    }
+
+    .nav-fixed {
+        height: auto !important;
+    }
+
+    .carousel h5 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .number .timer {
+        font-size: 35px;
+    }
+    p.count-text {
+        font-size: 15px;
+    }
+    .number .counter {
+        border-right: none;
+    }
+
+    .text-left {
+        padding-left: 30px;
+    }
+
+    .top-side{
+        margin: 0 2rem !important;
+    }
+
+    .div-left {
+        border-left: none;
     }
 
 }
 
-@media screen and (max-width: 767px){
-    .carousel h5{
-        font-size: 45px;
+@media screen and (max-width: 767px) {
+    .carousel h5 {
+        font-size:   45px;
         line-height: 55px;
     }
 }
