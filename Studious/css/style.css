@@ -27,7 +27,7 @@ body {
     font-size:        1rem;
     font-weight:      400;
     line-height:      1.5;
-    color:            #212529;
+    color:            var(--font-color);
     text-align:       left;
     background-color: #FFF;
 }
@@ -274,7 +274,7 @@ header .container, #header .container {
 }
 
 #header .navbar-nav a.nav-link:hover, header a:hover, #header .nav-item.active a.nav-link {
-    color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
 }
 
 #header .dropdown-toggle::after {
@@ -965,7 +965,6 @@ footer .copyright-footer p a:hover {
 }
 
 
-
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -1001,7 +1000,8 @@ footer .copyright-footer p a:hover {
     }
 
     #header {
-        padding: 10px 0 !important;
+        padding:  8px 0 !important;
+        position: fixed;
     }
 
     #header .navbar-toggler.collapsed .navbar-toggler-icon.icon-close {
@@ -1050,9 +1050,12 @@ footer .copyright-footer p a:hover {
         margin-top:             16px;
     }
 
-    #header .navbar-collapse {
-        background: var(--bg-color);
-        box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    #header .navbar-collapse.show {
+        background:      var(--bg-color);
+        box-shadow:      0 6px 19px rgba(0, 0, 0, 0.05);
+        display:         flex;
+        justify-content: center;
+        flex-wrap:       wrap;
     }
 
     #header .navbar-nav:last-child {
@@ -1062,18 +1065,21 @@ footer .copyright-footer p a:hover {
     #header .navbar-nav li.nav-item {
         padding: 4px 0;
     }
-    #header .search-right{
+
+    #header .search-right {
         text-align: center;
     }
-    #header .search-right input{
-        width: 220px !important;
-        margin: -15px auto 10px auto !important;
+
+    #header .search-right input {
+        width:     220px !important;
+        margin:    -15px auto 10px auto !important;
         transform: translateY(-10px);
+        border:    1px solid #EEE;
     }
 
-    #header button.search-btn{
-        top: 240px;
-        right: 37%;
+    #header button.search-btn {
+        top:    -20px;
+        right:  0;
         height: 40px !important;
     }
 
@@ -1083,9 +1089,9 @@ footer .copyright-footer p a:hover {
         font-size:  15px;
     }
 
-    .carousel{
-        padding: 2rem 0;
-        margin-top: -6rem;
+    .carousel {
+        padding:    2rem 0;
+        margin-top: -2rem;
     }
 
     .banner h4 a.title-head {
@@ -1097,16 +1103,18 @@ footer .copyright-footer p a:hover {
     }
 
     .carousel h5 {
-        font-size: 50px;
+        font-size:   50px;
         line-height: 60px;
     }
 
     .number .timer {
         font-size: 35px;
     }
+
     p.count-text {
         font-size: 15px;
     }
+
     .number .counter {
         border-right: none;
     }
@@ -1115,12 +1123,16 @@ footer .copyright-footer p a:hover {
         padding-left: 30px;
     }
 
-    .top-side{
+    .top-side {
         margin: 0 2rem !important;
     }
 
     .div-left {
         border-left: none;
+    }
+
+    .footer-contact .phone {
+        padding: 6px 0;
     }
 
 }
@@ -1130,7 +1142,83 @@ footer .copyright-footer p a:hover {
         font-size:   45px;
         line-height: 55px;
     }
+
+    .banner {
+        margin-top: -6em;
+    }
+
+    .sub-author {
+        grid-template-columns: .2fr 1fr;
+    }
+
+    .text-left {
+        padding-left: 0;
+    }
+    footer .sub-columns {
+        margin-top: 150px;
+    }
+
+    .top-side {
+        top:    -110px;
+        margin: 0 1rem !important;
+    }
+
+    .top-side button {
+        width: 30%;
+    }
+
+    footer {
+        margin-top: 5rem !important;
+    }
+
+    footer .sub-columns h6 {
+        margin-bottom:  10px;
+        padding-bottom: 7px;
+    }
+
+    .footer-sub {
+        padding: 40px 0 30px 0;
+    }
 }
 
+@media screen and (max-width: 479px) {
+    h3.title-main{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 28px !important;
+    }
+    p.count-text {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .text-left {
+        padding-left: 20px;
+    }
+
+    footer {
+        margin-top: 4rem !important;
+    }
+    h3.title-style {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .footer-form h4.title-head{
+        font-size: 30px;
+    }
+
+    .top-side{
+        top: -92px;
+    }
+    footer .sub-columns {
+        margin-top: 150px;
+    }
+    .footer-contact .phone {
+        padding: 4px 0;
+    }
+}
 
 
