@@ -39,7 +39,7 @@ body {
   font-weight: 400;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 h1,
 h2,
@@ -90,8 +90,42 @@ header.whiteHeader {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   height: 70px;
 }
-
 /* End Scroll Header */
+/* button dark Mode */
+.dark-mode-btn {
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  padding: 0px 0;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+.dark-mode-btn:hover,
+.dark-mode-active .dark-mode-off:hover {
+  color: var(--primary-color);
+}
+header.whiteHeader .dark-mode-btn {
+  color: #000;
+}
+.dark-mode-off {
+  display: none;
+}
+.dark-mode-on {
+  display: block;
+}
+
+.dark-mode-active .dark-mode-on {
+  display: none;
+}
+
+.dark-mode-active .dark-mode-off {
+  display: block;
+  color: #fff;
+}
+/* Enb button dark Mode */
 .navbar .navbar-brand,
 .w3l-footer-16 a.logo {
   font-size: 32px;
@@ -261,6 +295,7 @@ ul.submenu li.current_page_item a {
   font-size: 120px;
   font-weight: bold;
   margin-left: -0.5em;
+  line-height: 24px;
 }
 .w3l-banner h3 {
   font-size: 40px;
