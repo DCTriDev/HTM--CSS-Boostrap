@@ -53,3 +53,33 @@ $(document).ready(function () {
     },
   });
 });
+// dark mode
+var btnDarkMode = document.querySelector("#btn-dark-mode");
+btnDarkMode.addEventListener("click", function () {
+  //Toggle icon
+  if (btnDarkMode.classList.contains("dark-mode-active")) {
+    btnDarkMode.classList.remove("dark-mode-active");
+  } else {
+    btnDarkMode.classList.add("dark-mode-active");
+  }
+
+  //Active dark mode
+  if (btnDarkMode.classList.contains("dark-mode-active")) {
+    document.documentElement.style.setProperty("--bg-color", "#151421");
+    document.documentElement.style.setProperty("--heading-color", "#eee");
+    document.documentElement.style.setProperty("--font-color", "#c2c2c2");
+    document.documentElement.style.setProperty("--bg-grey", "#100f19");
+    document.documentElement.style.setProperty("--bg-lightgrey", "#100f19");
+    document.documentElement.style.setProperty(
+      "--border-color-light",
+      "rgb(255 255 255 / 10%)"
+    );
+  } else {
+    document.documentElement.style.setProperty("--bg-color", "#fff");
+    document.documentElement.style.setProperty("--heading-color", "#3f3a64");
+    document.documentElement.style.setProperty("--font-color", "#666");
+    document.documentElement.style.setProperty("--bg-grey", "#f7f7f7");
+    document.documentElement.style.setProperty("--bg-lightgrey", "#f8f9fa");
+    document.documentElement.style.setProperty("--border-color-light", "#eee");
+  }
+});
