@@ -17,6 +17,7 @@
     --bg-color-li:        rgb(13 54 159 / 9%);
     --bg-light:           #F8F9FF;
     --bg-color:           #FFF;
+    --bg-color-2:         #FFF;
     --border-color-light: #EEE;
     --box-shadow-color:   rgb(4 20 69 / 10%);
 }
@@ -29,7 +30,7 @@ body {
     line-height:      1.5;
     color:            var(--font-color);
     text-align:       left;
-    background-color: #FFF;
+    background-color: var(--bg-color);
 }
 
 a, a:hover, button, button:hover {
@@ -244,6 +245,10 @@ header .container, #header .container {
     font-weight: 600;
 }
 
+#header .navbar-brand:hover {
+    color: var(--secondary-color) !important;
+}
+
 #header .navbar {
     padding: 0;
 }
@@ -273,9 +278,9 @@ header .container, #header .container {
     transition: var(--transition-custom);
 }
 
-#header .navbar-nav a.nav-link:hover, header a:hover, #header .nav-item.active a.nav-link {
-    color: var(--primary-color) !important;
-}
+/*#header .navbar-nav a.nav-link:hover, header a:hover, #header .nav-item.active a.nav-link {*/
+/*    color: var(--secondary-color) !important;*/
+/*}*/
 
 #header .dropdown-toggle::after {
     display: none;
@@ -297,6 +302,10 @@ header .container, #header .container {
     width:         100%;
     border-radius: 30px;
     border:        2px solid #EEE;
+}
+
+.search-right input::placeholder {
+    color: var(--heading-color);
 }
 
 #header button.search-btn {
@@ -531,7 +540,7 @@ p.feature-text {
     border-top:                 none;
     border-bottom-left-radius:  8px;
     border-bottom-right-radius: 8px;
-    background:                 white;
+    background:                 var(--bg-color-2);
 }
 
 .course .content-top li {
@@ -574,7 +583,7 @@ ul.rating-list li a {
 }
 
 .service .service-item {
-    background:    white;
+    background:    var(--bg-color);
     padding:       30px;
     border-radius: 8px;
 }
@@ -660,7 +669,7 @@ p.count-text {
 .team-items {
     box-shadow:    0 20px 62px var(--box-shadow-color);
     padding:       10px;
-    background:    white;
+    background:    var(--bg-color-2);
     border-radius: 8px;
 }
 
@@ -1004,6 +1013,10 @@ footer .copyright-footer p a:hover {
         position: fixed;
     }
 
+    #header .navbar-nav a.nav-link:hover, header a:hover, #header .nav-item.active a.nav-link {
+        color: var(--secondary-color) !important;
+    }
+
     #header .navbar-toggler.collapsed .navbar-toggler-icon.icon-close {
         display: none;
     }
@@ -1047,7 +1060,6 @@ footer .copyright-footer p a:hover {
         text-align:             center;
         width:                  100%;
         padding:                20px;
-        margin-top:             16px;
     }
 
     #header .navbar-collapse.show {
@@ -1056,6 +1068,8 @@ footer .copyright-footer p a:hover {
         display:         flex;
         justify-content: center;
         flex-wrap:       wrap;
+        border:          1px solid var(--border-color) !important;
+        margin-top: 1rem;
     }
 
     #header .navbar-nav:last-child {
@@ -1068,13 +1082,14 @@ footer .copyright-footer p a:hover {
 
     #header .search-right {
         text-align: center;
+        margin-bottom: -10px !important;
     }
 
     #header .search-right input {
         width:     220px !important;
         margin:    -15px auto 10px auto !important;
         transform: translateY(-10px);
-        border:    1px solid #EEE;
+        border:    2px solid #EEE;
     }
 
     #header button.search-btn {
@@ -1123,6 +1138,10 @@ footer .copyright-footer p a:hover {
         padding-left: 30px;
     }
 
+    footer {
+        margin-top: 3rem;
+    }
+
     .top-side {
         margin: 0 2rem !important;
     }
@@ -1134,6 +1153,7 @@ footer .copyright-footer p a:hover {
     .footer-contact .phone {
         padding: 6px 0;
     }
+
 
 }
 
@@ -1154,6 +1174,7 @@ footer .copyright-footer p a:hover {
     .text-left {
         padding-left: 0;
     }
+
     footer .sub-columns {
         margin-top: 150px;
     }
@@ -1182,19 +1203,21 @@ footer .copyright-footer p a:hover {
 }
 
 @media screen and (max-width: 479px) {
-    h3.title-main{
-        font-size: 35px;
+    h3.title-main {
+        font-size:   35px;
         line-height: 45px;
     }
 
     .navbar .navbar-brand {
         font-size: 28px !important;
     }
+
     p.count-text {
-        font-size: 13px;
+        font-size:   13px;
         line-height: 20px;
-        margin-top: 10px;
+        margin-top:  10px;
     }
+
     .text-left {
         padding-left: 20px;
     }
@@ -1202,20 +1225,24 @@ footer .copyright-footer p a:hover {
     footer {
         margin-top: 4rem !important;
     }
+
     h3.title-style {
-        font-size: 30px;
+        font-size:   30px;
         line-height: 40px;
     }
-    .footer-form h4.title-head{
+
+    .footer-form h4.title-head {
         font-size: 30px;
     }
 
-    .top-side{
+    .top-side {
         top: -92px;
     }
+
     footer .sub-columns {
         margin-top: 150px;
     }
+
     .footer-contact .phone {
         padding: 4px 0;
     }
