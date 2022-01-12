@@ -750,6 +750,10 @@ a.nav-link:hover::before, a.dropdown-item:hover::before {
     border-radius: 50%;
     background:    #FFF;
 }
+.video-popup-inner span.video-play-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
 
 .video-popup-inner span.video-play-icon span {
     color: var(--primary-color);
