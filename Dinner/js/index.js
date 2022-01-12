@@ -1,22 +1,4 @@
-/**
- Solution:
- Khi click vào nút moon 🌙 , thẻ body sẽ được thêm class dark.
- Dựa vào class dark, ta viết css dành riêng cho dark theme.
-
- Ngược lại, khi click vào nút sun ☀️, ta sẽ xóa class dark để css light theme hiện lại
-
- */
-
-//gọi thẻ button có id là switchButton
-// gắn chức năng click cho switchButton
-// document.getElementById("switchButton").onclick = function () {
-//     //khi button được click thì tìm đến thẻ body có id là myBody
-//     // dùng classlist để gọi thuộc tính class của thẻ body
-//     //Sử dụng toggle() để thêm hoặc xóa 1 class của thẻ html. Nếu thẻ body không có class dark thì toggle sẽ thêm class dark vào body. Ngược lại, nếu thẻ body đang có class dark thì toogle sẽ xóa class dark đi.
-//     document.getElementById("myBody").classList.toggle("dark");
-// };
-
-
+// back to top 
 window.onscroll = function () {
     scrollFunction()
 };
@@ -31,7 +13,87 @@ function scrollFunction() {
 }
 
 backToTop.addEventListener("click", function () {
-    window.scrollTo({top: 0, behavior: "smooth"})
+    window.scrollTo({ top: 0, behavior: "smooth" })
 })
 
 
+// owl carouse
+$(document).ready(function () {
+    $("#owl-agency").owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 50,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            736: {
+                items: 1,
+                nav: false
+            }
+        }
+    })
+})
+
+//--magnific popup-- >
+
+$(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
+});
+
+//-- //magnific popup -->
+
+// dark mode
+
+let btn_dark_mode = document.querySelector('#btn-dark-mode')
+
+btn_dark_mode.addEventListener('click', function () {
+    //switch icon
+    btn_dark_mode.classList.toggle('dark-mode-active')
+
+    //Color when dark mode active
+    if (btn_dark_mode.classList.contains('dark-mode-active')) {
+        document.documentElement.style.setProperty("--primary-color", "#4867B0");
+        document.documentElement.style.setProperty("--bg-color", "#161C2D");
+        document.documentElement.style.setProperty("--heading-color", "#FDFFFC");
+    }
+
+    //   color when light mode active
+    else {
+        document.documentElement.style.setProperty("--primary-color", "#0D369F");
+        document.documentElement.style.setProperty("--bg-color", "#FFF");
+        document.documentElement.style.setProperty("--heading-color", "#060606");
+    }
+})                             
