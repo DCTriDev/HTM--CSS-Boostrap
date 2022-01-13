@@ -1,17 +1,5 @@
-// back to top 
-window.onscroll = function () {
-    scrollFunction()
-};
+// back to top
 let backToTop = document.getElementById("back-to-top")
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTop.style.display = "block";
-    } else {
-        backToTop.style.display = "none";
-    }
-}
-
 backToTop.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" })
 })
@@ -85,15 +73,11 @@ btn_dark_mode.addEventListener('click', function () {
 
     //Color when dark mode active
     if (btn_dark_mode.classList.contains('dark-mode-active')) {
-        document.documentElement.style.setProperty("--font-color", "#232220;");
-        document.documentElement.style.setProperty("--bg-color", "#232220");
-        document.documentElement.style.setProperty("--heading-color", "#eee");
+
     }
 
     //   color when light mode active
     else {
-        document.documentElement.style.setProperty("--primary-color", "ff6600");
-        document.documentElement.style.setProperty("--bg-color", "#FFF");
-        document.documentElement.style.setProperty("--heading-color", "#232121");
+
     }
 })                             
