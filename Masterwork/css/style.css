@@ -164,7 +164,7 @@ img.img-curve:hover {
 /*Header*/
 header {
     background-color: #FFF;
-    padding:          15px 0;
+    padding:          18px 0;
     transition:       all 0.4s ease 0s;
     display:          grid;
     align-items:      center;
@@ -172,7 +172,7 @@ header {
 }
 
 .nav-fix {
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 header a {
@@ -964,10 +964,19 @@ footer p {
     font-size:   16px;
 }
 
+footer .text-center p {
+    margin-bottom: 10px;
+}
+
+
 footer .copyright {
     border-top:    1px solid #EAEAEA;
-    margin-bottom: -10px;
-    padding-top:   15px;
+    margin-bottom: -5px;
+    padding-top:   30px;
+}
+
+footer ul.social {
+    transform: translateY(-5px);
 }
 
 footer ul.social li {
@@ -1074,8 +1083,12 @@ footer ul.social li a:hover {
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     /*Header*/
+    .nav-fix {
+        padding: 10px 0;
+    }
+
     header {
         height:  auto;
         padding: 15px 0;
@@ -1184,7 +1197,7 @@ footer ul.social li a:hover {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .theme-button {
         line-height: 44px;
         padding:     0 20px;
@@ -1248,54 +1261,78 @@ footer ul.social li a:hover {
     .accordion .card-body{
         padding: 20px 15px!important;
     }
-    .accordion .card-body h3{
-        margin: 14px 0;
-        font-size: 26px;
+    .accordion .card-body h3 {
+        margin:      14px 0;
+        font-size:   26px;
         line-height: 33px;
         font-weight: bold;
     }
 
-    .accordion .card-body p{
+    .accordion .card-body p {
         margin-bottom: 1rem;
 
     }
 
-    /*.project ul.nav.nav-tabs li.nav-item {*/
-    /*    width: 100% !important;*/
-    /*}*/
-    /*.project ul.nav-tabs li.nav-item a.nav-link {*/
-    /*    border:        1px solid rgb(193, 193, 193) !important;*/
-    /*    border-radius: 0 !important;*/
-    /*    padding: 5px 15px;*/
-    /*    font-weight: normal;*/
-    /*    color: #212529;*/
-    /*    text-align: left;*/
-    /*    font-size: 20px;*/
-    /*}*/
-    /*.project ul.nav.nav-tabs li.nav-item a {*/
-    /*    background: none rgb(245, 245, 245);*/
-    /*}*/
-    /*.project #myTabContent {*/
-    /*    display: block;*/
-    /*}*/
-    /*.project span.item-arrow{*/
-    /*    display: block;*/
-    /*    width: 0;*/
-    /*    height: 0;*/
-    /*    float: right;*/
-    /*    margin-top: 7px;*/
-    /*    border-left: 6px solid transparent;*/
-    /*    border-right: 6px solid transparent;*/
-    /*    border-top: 12px solid #c1c1c1;*/
-    /*}*/
-    /*.project a.nav-link.active span.item-arrow{*/
-    /*    border: none;*/
-    /*    border-left: 6px solid transparent;*/
-    /*    border-right: 6px solid transparent;*/
-    /*    border-bottom: 12px solid #9B9797;*/
-    /*}*/
-    /*.project-toggle-content{*/
-    /*    height: 100vh;*/
-    /*}*/
+    .project span.item-arrow {
+        display:      block;
+        width:        0;
+        height:       0;
+        float:        right;
+        margin-top:   7px;
+        border-left:  6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top:   12px solid #C1C1C1;
+    }
 
+    .project a.nav-link[aria-expanded="true"] span.item-arrow {
+        border:        none;
+        border-left:   6px solid transparent;
+        border-right:  6px solid transparent;
+        border-bottom: 12px solid #9B9797;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .banner-left h3 {
+        font-size:   40px;
+        line-height: 45px;
+    }
+
+    .blog-sub-title p {
+        font-size:   15px;
+        line-height: 22px;
+    }
+
+    .faq-right h2 {
+        font-size:   18px;
+        line-height: 30px;
+    }
+
+    .accordion .card-body h3 {
+        font-size:   24px;
+        line-height: 30px;
+        margin-top:  0 !important;
+    }
+
+    .testimonial .slider-info {
+        grid-gap: 10px;
+        padding:  2rem 1rem;
+    }
+
+    footer .column li {
+        margin: 5px 0;
+    }
+
+    footer .subscribe button {
+        padding: 12px 10px;
+    }
+
+    footer .text-center p {
+        margin-top: -6px;
+        margin-bottom: 21px;
+    }
+
+    footer ul.social {
+        margin-bottom: 0;
+    }
 }
