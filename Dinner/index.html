@@ -21,427 +21,381 @@
 </head>
 
 <body>
-    <div id="header">
-        <nav class="navbar ">
-            <div class="container">
-                <a class="navbar-brand h1">Diner</a>
-                <div class="nav__content row position-relative">
-                    <div class="search-bar position-absolute">
-                        <form class="form-inline border-white">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search here.."
-                                aria-label="Search" onload="equalWidth()">
-                            <i class="fa fa-search"></i>
-                        </form>
-                    </div>
-                    <!-- Start phan dark mode  -->
-                    <div class="dark-mode p-2 text-white mr-2">
-                        <i class="far fa-moon "></i>
-                        <!-- <i class="far fa-sun"></i>  -->
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav"
-                        aria-controls="navMenu" aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon navbar-expand-lg bg-white"></span> -->
-                        <i class="fa fa-bars text-white"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="menuNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Services</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="main">
-        <!-- Phần parallax -->
-        <div class="parallax">
-            <div class="container">
-                <div class="card" style="width: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title display-4">The Only Thing We <br>
-                            Love More Than Food <br>
-                            Is You!</h5>
-                        <p class="card-text mt-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Molestias nemo
-                            fuga
-                            omnis, alias saepe explicabo.</p>
-                        <a href="#" class="btn btn-white">Read More
-                            <span class="fa fa-chevron-right ml-2"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Parallax -->
-    </div>
-
-    <div class="blog container bg-white">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-title">About Us</p>
-                        <h3 class="card-text">We found our creative space that is open for you.</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
-                            ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad.
-                            Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
-                            culpa!Lorem ipsum init dolor sit.</p>
-                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
-                            ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad.
-                            Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="booking ">
-        <div class="card ">
-            <div class="row no-gutters">
-                <div class="card-image col-6 ">
-                    <img src="./img/banner3.jpg" class="card-img" alt="Hinh banner 3">
-                </div>
-                <div class="col-6">
-                    <div class="card-body left__block ">
-                        <h5 class="card-title">More than 3000 Restaurants</h5>
-                        <p class="card-text text__1">Book a table easly at the best price</p>
-                        <p class="card-text text__2">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales
-                            quis.
-                            Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
-                        </p>
-                        <div class="blog__card row">
-                            <div class="col-6 p-0">
-                                <div class="card border-0">
-                                    <div class="card-body">
-                                        <div class="card-icon bg-white">
-                                            <i class="fa fa-thumbs-up"></i>
-                                        </div>
-                                        <a class="blog__link mt-1 mb-3" href="#">Best Deals</a>
-                                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 blog__card">
-                                <div class="card border-0">
-                                    <div class="card-body">
-                                        <div class="card-icon bg-white">
-                                            <i class="fa fa-utensils"></i>
-                                        </div>
-                                        <a href="#" class="blog__link mt-3 mb-3">Best Food</a>
-                                        <p class="card-text">Lorem ipsum viverra feugiat. Pellen tesque libero justo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="new">
+    <!--/banner-with-header-->
+    <div class="w3lhny-banner" id="home">
         <div class="container">
-            <div class="header-title text-center">
-                <p>What's new</p>
-                <h3>Popular Categories</h3>
+            <div class="w3_hny_header">
+                <div class="w3_hnyits_logo">
+                    <h1><a class="logo-brand" href="index.html">Diner </a></h1>
+                </div>
+                <div class="w3menu-right-content">
+                    <div class="search-bar">
+                        <!--/search-right-->
+                        <form class="search position-relative">
+                            <input type="search" class="search__input" name="search" placeholder="Search here.."
+                                onload="equalWidth()" required="">
+                            <span class="fa fa-search search__icon"></span>
+                        </form>
+                        <!--//search-right-->
+                    </div>
+                    <div class="w3_menu text-center">
+                        <!-- toggle switch for light and dark theme -->
+                        <div class="dark-mode-btn" id="btn-dark-mode">
+                            <span class="iconify dark-mode-off" data-icon="gg:sun"></span>
+                            <span class="iconify dark-mode-on" data-icon="gg:moon"></span>
+                        </div>
+                        <!-- //toggle switch for light and dark theme -->
+                        </nav>
+                    </div>
+                    <div class="mobile-nav-button text-center">
+                        <button id="trigger-overlay" type="button"><i class="fa fa-bars"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="overlay overlay-scale">
+                    <button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+                    <nav>
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">404</a></li>
+                            <li><a href="">Landing Page</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Shot Codes</a></li>
+                            <li><a href="">Email</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g1.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Vegetarian
-                            </a>
-                            <p class="card-text mt-1">$350</p>
-                        </div>
+            <!--/bannerhny-info-->
+            <div class="bannerhny-info">
+                <h3 class="mb-4">The only thing we love more than food is you!</h3>
+                <div class="separatorhny"></div>
+                <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
+                    sit.Ea
+                    ipsum sed consequuntur illum facere.
+                </p>
+                <a class="btn btn-white mt-sm-5 mt-4 mr-2" href="about.html">
+                    Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <!--/bannerhny-info-->
+    <!-- /content-1-->
+    <div class="w3l-content-1 py-5">
+        <div class="container py-md-5">
+            <div class="row content-1-grids">
+                <div class="col-lg-5 content-1-left">
+                    <div class="header-title">
+                        <h6 class="title-subhny">About Us</h6>
+                        <h3 class="title-w3l mb-4">
+                            We found our creative space that is open for you.
+                        </h3>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g2.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Drinks
-                            </a>
-                            <p class="card-text mt-1">$550</p>
-                        </div>
+                <div class="col-lg-7 content-1-right pl-lg-5 mt-lg-0 mt-3">
+                    <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                        elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init
+                        dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+                    </p>
+                    <p class="mt-3">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+                        elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //content-1-->
+    <!--/w3l-agents-block-->
+    <div class="w3l-agent-block" id="why">
+        <div class="container-fluid px-lg-0">
+            <div class="row align-items-center no-gutters">
+                <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+                    <div class="agent-block-image">
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g3.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Lunch
-                            </a>
-                            <p class="card-text mt-1">$650</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g4.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Bakery
-                            </a>
-                            <p class="card-text mt-1">$550</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g5.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Desserts
-                            </a>
-                            <p class="card-text mt-1">$750</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="img__overlay">
-                            <a href="">
-                                <img src="./img/g6.jpg" class="img img-fluid" alt="...">
-                            </a>
-                        </div>
-                        <div class="card-body pl-5 pb-4">
-                            <a class="card-title" href="">
-                                Pizza
-                            </a>
-                            <p class="card-text mt-1">$850</p>
+                <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+                    <div class="agent-block-image-inf p-md-5 p-3">
+                        <h6 class="title-subhny two">More than 3000 Restaurants</h6>
+                        <h3 class="title-w3l two">
+                            Book a table easly at the best price</h3>
+                        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
+                            turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut
+                            justo ultrices
+                            in.</p>
+
+                        <div class="subscribe-cat mt-5">
+                            <div class="subscribe-cat-gd">
+                                <div class="icon mb-4">
+                                    <span class="fa fa-thumbs-up"></span>
+                                </div>
+                                <a href="#" class="subscribe-cat-link">Best Deals</a>
+                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                            </div>
+
+                            <div class="subscribe-cat-gd">
+                                <div class="icon mb-4">
+                                    <span class="fa fa-utensils"></span>
+                                </div>
+                                <a href="#" class="subscribe-cat-link">Best Food</a>
+                                <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- home-services  -->
-    <div class="services">
+    <!--//w3l-agents-block-->
+    <!-- popular categories  -->
+    <section class="w3l-res-categories py-5">
+        <div class="container py-md-5 py-2">
+            <div class="header-title text-center">
+                <h6 class="title-subhny">What's New</h6>
+                <h3 class="title-w3l mb-lg-5">
+                    Popular Categories
+                </h3>
+            </div>
+            <div class="res-categories-grids row">
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g1.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Vegetarian</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$350</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g2.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Drinks</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$550</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-lg-0 mt-4">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g3.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Lunch</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$650</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g4.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Bakery</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$550</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g5.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Desserts</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$750</span></h6>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 content-left-sec gal-slide-grid mt-4 pt-lg-2">
+                    <div class="gal-slide-img">
+                        <a href=""><img src="./img/g6.jpg" class="img img-fluid" alt=""></a>
+                    </div>
+                    <div class="gal-slide-info p-md-5 p-4">
+                        <a href="">
+                            <h4 class="mt-4 mb-0">Pizza</h4>
+                        </a>
+                        <h6 class="mt-sm-2 mt-1"><span>$850</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- popular categories  -->
+
+    <!-- /home-services-->
+    <div id="features" class="home-services py-5">
         <div class="container py-lg-5 py-md-3 py-3">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-users"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">01</p>
-                                    <h4>
-                                        <a href="">Soup</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-users"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
-                                vita sit.
-                            </p>
+                            <div class="info">
+                                <p>01</p>
+                                <h4><a href="">Soup</a></h4>
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-shield-alt"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">02</p>
-                                    <h4>
-                                        <a href="">Drinks</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-shield-alt"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-                                sit.
-                            </p>
+                            <div class="info">
+                                <p>02</p>
+                                <h4><a href="">Drinks</a></h4>
+
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-thermometer-full"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">03</p>
-                                    <h4>
-                                        <a href="">Pizza</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-thermometer-full"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-                                sit.
-                            </p>
+                            <div class="info">
+                                <p>03</p>
+                                <h4><a href="">Pizza</a></h4>
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-american-sign-language-interpreting"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">04</p>
-                                    <h4>
-                                        <a href="">Breakfast</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-american-sign-language-interpreting"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-                                sit.
-                            </p>
+                            <div class="info">
+                                <p>04</p>
+                                <h4><a href="">Breakfast</a></h4>
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-paint-brush"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">05</p>
-                                    <h4>
-                                        <a href="">Lunch</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-paint-brush"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-                                sit.
-                            </p>
+                            <div class="info">
+                                <p>05</p>
+                                <h4><a href="">Lunch</a></h4>
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="box">
-                        <div class="box__content">
-                            <div class="box__icon">
-                                <div class="icon">
-                                    <span class="fa fa-eraser"></span>
-                                </div>
-                                <div class="box__info">
-                                    <p class="mb-0">06</p>
-                                    <h4>
-                                        <a href="">Dinner</a>
-                                    </h4>
-                                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <span class="fa fa-eraser"></span>
                             </div>
-                            <p class="mt-3 mb-0">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-                                sit.
-                            </p>
+                            <div class="info">
+                                <p>06</p>
+                                <h4><a href="">Dinner</a></h4>
+                            </div>
                         </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- home-services  -->
-    <div style="margin: 8px auto; display: block; text-align:center;"></div>
-    <div class="more__info">
-        <div class="container">
-            <div class="more__info__title">
-                <h3>Deliciousness jumping into <br> the mouth.</h3>
-                <div class="button">
-                    <a href="#" class="btn btn__1">
-                        Read More
-                        <span class="fa fa-chevron-right ml-2"></span>
-                    </a>
-                    <a href="#" class="btn btn__2">
-                        Contact Us
-                        <span class="fa fa-chevron-right ml-2"></span>
-                    </a>
+
+    <!-- Deliciousness  -->
+    <!-- middle -->
+    <div class="middle py-5">
+        <div class="container pt-lg-2 pb-lg-4 py-4">
+            <div class="welcome-left text-center py-lg-5">
+                <h3 class="hny-title px-lg-5">Deliciousness jumping into <br> the mouth.</h3>
+                <div class="middle-buttons pb-lg-5">
+                    <a href="" class="btn btn-style btn-white mt-sm-5 mt-4 mr-lg-4 mr-2">Read More <span
+                            class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    <a href="" class="btn btn-style btn-primary mt-sm-5 mt-4">Contact Us <span
+                            class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="number">
+    <!-- //middle -->
+    <!-- stats -->
+    <div class="w3_stats py-lg-0 py-md-5 py-4" id="stats">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="number__icon bg-white">
-                        <span class="fa fa-building"></span>
-                        <div class="number__content">15,100</div>
-                        <p class="number__text">Branches</p>
+            <div class="w3-stats">
+                <div class="row">
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
+                        <div class="counter">
+                            <span class="fa fa-building"></span>
+                            <div class="timer count-title count-number mt-3" data-to="15100" data-speed="1500">15,100
+                            </div>
+                            <p class="count-text">Branches</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="number__icon bg-white">
-                        <span class="fa fa-utensils"></span>
-                        <div class="number__content">19,256</div>
-                        <p class="number__text">Food Items</p>
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
+                        <div class="counter">
+                            <span class="fa fa-utensils"></span>
+                            <div class="timer count-title count-number mt-3" data-to="19256" data-speed="1500">19,256
+                            </div>
+                            <p class="count-text ">Food Items</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="number__icon bg-white">
-                        <span class="fa fa-users"></span>
-                        <div class="number__content">12,100</div>
-                        <p class="number__text">Chefs</p>
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
+                        <div class="counter">
+                            <span class="fa fa-users"></span>
+                            <div class="timer count-title count-number mt-3" data-to="12100" data-speed="1500">12,100
+                            </div>
+                            <p class="count-text">Chefs</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="number__icon bg-white">
-                        <span class="fa fa-smile"></span>
-                        <div class="number__content">5,560</div>
-                        <p class="number__text">Happy Customers</p>
+                    <div class="col-md-3 col-6 mt-md-0 mt-4">
+                        <div class="counter">
+                            <span class="fa fa-smile"></span>
+                            <div class="timer count-title count-number mt-3" data-to="2560" data-speed="1500">2,560
+                            </div>
+                            <p class="count-text">Happy Customers</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- //stats -->
+    <!-- Deliciousness  -->
+
     <!-- home page video popup section -->
-    <section class="w3l-videohny" id="video">
+    <div class="w3l-videohny" id="video">
         <div class="new-block py-5">
             <div class="container py-lg-5">
                 <div class="history-info position-relative">
                     <!--//video-->
-                    <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+                    <a href="" class="popup-with-zoom-anim play-view text-center pl-3">
                         <span class="video-play-icon">
                             <span class="fa fa-play"></span>
                         </span>
@@ -462,113 +416,111 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- //home page video popup section -->
-    <div class="post">
-        <div class="container">
+
+    <!-- blog post  -->
+    <div class="w3l-blogposts py-5" id="blogs">
+        <div class="container py-md-5 py-2">
             <div class="header-title text-center">
-                <h6>Latest Posts</h6>
-                <h3> Blog Posts</h3>
+                <h6 class="title-subhny">Latest Posts</h6>
+                <h3 class="title-w3l">
+                    Blog Posts
+                </h3>
             </div>
             <div class="row">
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 col-md-6 item mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
                             <a href="">
                                 <img class="card-img-bottom d-block radius-image" src="./img/banner1.jpg"
-                                    alt="Hinh banner 1">
+                                    alt="Card image cap">
                             </a>
-                            <div class="post__content">
-                                <a href="#" class="receipe">Receipe</a>
-                                <span class="fa fa-clock mr-2">
-                                    <span class="post__detail"> 10 Min Cook</span>
+                            <div class="post-pos">
+                                <a href="" class="receipe green">Reciepe</a>
+                                <span class="meta-info meta-info-custom">
+                                    <span class="fa fa-clock mr-2" aria-hidden="true"></span>10 Min Cook
                                 </span>
                             </div>
                         </div>
-                        <div class="card-body p-0 post-details">
-                            <a href="#">The Best Cookie Recipes To Bake This Weekend
+                        <div class="card-body p-0 blog-details">
+                            <a href="" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                                 vitae sit.</p>
-                            <div class="post__footer">
-                                <div class="post__icon">
-                                    <a href="#" class="post__img">
-                                        <img src="./img/team1.jpg" alt="">
+                            <div class="p-footer mt-3">
+                                <div class="p-meta-info">
+                                    <a href="" class="post-img-anchor">
+                                        <img src="/img/team1.jpg" alt="" class="post-img radius-img img-fluid">
                                     </a>
-                                    <a href="#" class="post__name">Rashed Kabir</a>
+                                    <a href="">Rashed Kabir</a>
                                 </div>
-                                <a href="#" class="post__read">
-                                    Read More
-                                    <span class="fa fa-chevron-right ml-2"></span>
-                                </a>
+                                <a href="" class="read">Read More <span class="fa fa-chevron-right ml-2"
+                                        aria-hidden="true"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 col-md-6 item mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
                             <a href="">
                                 <img class="card-img-bottom d-block radius-image" src="./img/banner2.jpg"
-                                    alt="Hinh banner 1">
+                                    alt="Card image cap">
                             </a>
-                            <div class="post__content">
-                                <a href="#" class="receipe">Soup</a>
-                                <span class="fa fa-clock mr-2">
-                                    <span class="post__detail"> 10 Min Cook</span>
+                            <div class="post-pos">
+                                <a href="" class="receipe green">Soup</a>
+                                <span class="meta-info meta-info-custom">
+                                    <span class="fa fa-clock mr-2" aria-hidden="true"></span>10 Min Cook
                                 </span>
                             </div>
                         </div>
-                        <div class="card-body p-0 post-details">
-                            <a href="#">The Best Cookie Recipes To Bake This Weekend
+                        <div class="card-body p-0 blog-details">
+                            <a href="" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                                 vitae sit.</p>
-                            <div class="post__footer">
-                                <div class="post__icon">
-                                    <a href="#" class="post__img">
-                                        <img src="./img/team2.jpg" alt="">
+                            <div class="p-footer mt-3">
+                                <div class="p-meta-info">
+                                    <a href="" class="post-img-anchor">
+                                        <img src="./img/team2.jpg" alt="" class="post-img radius-img img-fluid">
                                     </a>
-                                    <a href="#" class="post__name">Jannatul Ferdous</a>
+                                    <a href="">Jannatul Ferdous</a>
                                 </div>
-                                <a href="#" class="post__read">
-                                    Read More
-                                    <span class="fa fa-chevron-right ml-2"></span>
-                                </a>
+                                <a href="" class="read">Read More <span class="fa fa-chevron-right ml-2"
+                                        aria-hidden="true"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5">
+                <div class="col-lg-4 col-md-6 item mt-5">
                     <div class="card">
                         <div class="card-header p-0 position-relative">
                             <a href="">
                                 <img class="card-img-bottom d-block radius-image" src="./img/banner3.jpg"
-                                    alt="Hinh banner 3">
+                                    alt="Card image cap">
                             </a>
-                            <div class="post__content">
-                                <a href="#" class="receipe">Drinks</a>
-                                <span class="fa fa-clock mr-2">
-                                    <span class="post__detail"> 10 Min Cook</span>
+                            <div class="post-pos">
+                                <a href="" class="receipe green">Drinks</a>
+                                <span class="meta-info meta-info-custom">
+                                    <span class="fa fa-clock mr-2" aria-hidden="true"></span>15 Min Cook
                                 </span>
                             </div>
                         </div>
-                        <div class="card-body p-0 post-details">
-                            <a href="#">The Best Cookie Recipes To Bake This Weekend
+                        <div class="card-body p-0 blog-details">
+                            <a href="" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
                             </a>
                             <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
                                 vitae sit.</p>
-                            <div class="post__footer">
-                                <div class="post__icon">
-                                    <a href="#" class="post__img">
-                                        <img src="./img/team3.jpg" alt="">
+                            <div class="p-footer mt-3">
+                                <div class="p-meta-info">
+                                    <a href="" class="post-img-anchor">
+                                        <img src="./img/team3.jpg" alt="" class="post-img radius-img img-fluid">
                                     </a>
-                                    <a href="#" class="post__name">Rashed Kabir</a>
+                                    <a href="">Rashed Kabir</a>
                                 </div>
-                                <a href="#" class="post__read">
-                                    Read More
-                                    <span class="fa fa-chevron-right ml-2"></span>
-                                </a>
+                                <a href="" class="read">Read More <span class="fa fa-chevron-right ml-2"
+                                        aria-hidden="true"></span></a>
                             </div>
                         </div>
                     </div>
@@ -576,6 +528,8 @@
             </div>
         </div>
     </div>
+    <!--//blog-posts-->
+
     <!-- testimonials -->
     <div class="w3l-clients w3l-agency-test" id="testimonials">
         <div class="midd-w3 py-5">
@@ -595,9 +549,11 @@
                                 <blockquote>
                                     <q>OMG! I cannot believe. It's Awesome</q>
                                 </blockquote>
-                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                <p>My new site is so much faster and easier to work with than my old site. They
+                                    are here
                                     to
-                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                    labore.
                                     Pellen tesque libero ut justo, ultrices in ligula.</p>
                                 <div class="text-center mt-4">
                                     <div class="people-info align-self">
@@ -616,9 +572,11 @@
                                 <blockquote>
                                     <q>Simply the best. Better than all the rest.</q>
                                 </blockquote>
-                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                <p>My new site is so much faster and easier to work with than my old site. They
+                                    are here
                                     to
-                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                    labore.
                                     Pellen tesque libero ut justo, ultrices in ligula.</p>
                                 <div class="text-center mt-4">
                                     <div class="people-info align-self">
@@ -637,9 +595,11 @@
                                 <blockquote>
                                     <q>OMG! I cannot believe. It's Awesome</q>
                                 </blockquote>
-                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                <p>My new site is so much faster and easier to work with than my old site. They
+                                    are here
                                     to
-                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                    labore.
                                     Pellen tesque libero ut justo, ultrices in ligula.</p>
                                 <div class="text-center mt-4">
                                     <div class="people-info align-self">
@@ -658,9 +618,11 @@
                                 <blockquote>
                                     <q>OMG! I cannot believe. It's Awesome</q>
                                 </blockquote>
-                                <p>My new site is so much faster and easier to work with than my old site. They are here
+                                <p>My new site is so much faster and easier to work with than my old site. They
+                                    are here
                                     to
-                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                    labore.
                                     Pellen tesque libero ut justo, ultrices in ligula.</p>
                                 <div class="text-center mt-4">
                                     <div class="people-info align-self">
@@ -683,15 +645,16 @@
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <h2><a class="navbar-brand" href="index.html">Diner</a></h2>
+                            <h2><a class="navbar-brand" href="">Diner</a></h2>
                         </div>
-                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
+                            Semper at
                             tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
                         <div class="main-social-footer-29 mt-4">
                             <a href="" class="facebook"><span class="fab fa-facebook-f"></span></a>
-                            <a href="#" class="twitter"><span class="fab fa-twitter"></span></a>
-                            <a href="#" class="instagram"><span class="fab fa-instagram"></span></a>
-                            <a href="#" class="linkedin"><span class="fab fa-linkedin-in"></span></a>
+                            <a href="" class="twitter"><span class="fab fa-twitter"></span></a>
+                            <a href="" class="instagram"><span class="fab fa-instagram"></span></a>
+                            <a href="" class="linkedin"><span class="fab fa-linkedin-in"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
@@ -700,7 +663,7 @@
                             <li><a href="">About Us</a></li>
                             <li><a href="">Services</a></li>
                             <li><a href=""> Blog posts</a></li>
-                            <li><a href="#"> Careers</a></li>
+                            <li><a href=""> Careers</a></li>
                             <li><a href="">Contact us</a></li>
                         </ul>
                     </div>
@@ -708,17 +671,17 @@
                         <h6 class="footer-title-29">More Info</h6>
                         <ul>
                             <li><a href="">History</a></li>
-                            <li><a href="#">Vision & Values</a></li>
-                            <li><a href="#">Awards</a></li>
-                            <li><a href="#"> Media</a></li>
-                            <li><a href="#"> Support</a></li>
+                            <li><a href="">Vision & Values</a></li>
+                            <li><a href="">Awards</a></li>
+                            <li><a href=""> Media</a></li>
+                            <li><a href=""> Support</a></li>
                         </ul>
 
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
                         <h6 class="footer-title-29">Subscribe to our Newsletter </h6>
                         <p>Enter your email and receive the latest news, updates and special offers from us.</p>
-                        <form action="#" class="subscribe mt-4" method="post">
+                        <form action="" class="subscribe mt-4" method="post">
                             <input type="email" name="email" placeholder="Your Email Address" required="">
                             <button class="btn btn-style btn-primary w-100 mt-3">Subscibe Now</button>
                         </form>
@@ -747,6 +710,7 @@
         </div>
     </div>
     <!-- copyright -->
+
     <!--    back to top button-->
     <button id="back-to-top" title="Go to top">
         ⤴
@@ -768,6 +732,8 @@
     <script src="./owl-carousel/js/owl.carousel.min.js"></script>
     <!-- video popup  -->
     <script src="./magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- iconify -->
+    <script src="./iconify/iconify.min.js"></script>
     <!-- js  -->
     <script src="./js/index.js"></script>
 </body>

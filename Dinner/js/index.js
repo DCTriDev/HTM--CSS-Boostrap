@@ -85,15 +85,15 @@ btn_dark_mode.addEventListener('click', function () {
 
     //Color when dark mode active
     if (btn_dark_mode.classList.contains('dark-mode-active')) {
-        document.documentElement.style.setProperty("--primary-color", "#4867B0");
-        document.documentElement.style.setProperty("--bg-color", "#161C2D");
-        document.documentElement.style.setProperty("--heading-color", "#FDFFFC");
+        document.documentElement.style.setProperty("--font-color", "#232220;");
+        document.documentElement.style.setProperty("--bg-color", "#232220");
+        document.documentElement.style.setProperty("--heading-color", "#eee");
     }
 
     //   color when light mode active
     else {
-        document.documentElement.style.setProperty("--primary-color", "#0D369F");
+        document.documentElement.style.setProperty("--primary-color", "ff6600");
         document.documentElement.style.setProperty("--bg-color", "#FFF");
-        document.documentElement.style.setProperty("--heading-color", "#060606");
+        document.documentElement.style.setProperty("--heading-color", "#232121");
     }
 })                             
