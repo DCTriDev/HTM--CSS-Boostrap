@@ -27,6 +27,11 @@ body {
     background-color: var(--bg-color);
 }
 
+body a, button, .btn {
+    cursor:      pointer !important;
+    font-family: 'Jost', sans-serif;
+}
+
 a {
     text-decoration:  none;
     background-color: transparent;
@@ -59,6 +64,7 @@ p {
 
 b, strong {
     font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 ul {
@@ -1015,21 +1021,33 @@ footer .copyright a:hover {
     }
 }
 
-@media only screen and (max-width: 991px) {
-    header {
-        height:     auto;
-        padding:    10px 0;
-        transition: all 0.5s ease;
-        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+@media screen and (max-width: 1200px) {
+    .carousel-content h5 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+}
+    .carousel-content p {
+        font-size: 15px;
     }
 
-    .nav-fixed {
+    @media only screen and (max-width: 991px) {
+        header {
+            height:     auto;
+            padding:    10px 0;
+            transition: all 0.5s ease;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-fixed {
         padding: 5px 0;
     }
 
     .navbar-nav {
-        width:   100%;
-        padding: 20px 0;
+        width:         100%;
+        padding:       20px 0;
+        margin-top:    -5px;
+        margin-bottom: 5px;
     }
 
     a.nav-link {
@@ -1145,20 +1163,22 @@ footer .copyright a:hover {
     .pricing .pricing-content .pricing-item.active {
         transform: scale(1);
     }
-
-
 }
 
-@media only screen and (max-width: 767px) {
-    .bg-img {
-        min-height:      580px;
-        background-size: cover;
-    }
+    @media only screen and (max-width: 767px) {
+        .carousel-content p {
+            font-size: 16px;
+        }
 
-    .number-item .counter {
-        font-size:   35px !important;
-        line-height: 38px;
-        margin-top:  20px;
+        .bg-img {
+            min-height:      580px;
+            background-size: cover;
+        }
+
+        .number-item .counter {
+            font-size:   35px !important;
+            line-height: 38px;
+            margin-top:  20px;
     }
 
     .number-item h4 {
@@ -1166,14 +1186,54 @@ footer .copyright a:hover {
     }
 
 
-    .owl-two.owl-carousel.owl-theme .owl-dots {
-        display: none;
+        .owl-two.owl-carousel.owl-theme .owl-dots {
+            display: none;
+        }
+
+        .subscribe-form-field button {
+            flex-basis: 100%;
+            display:    block;
+            width:      100%;
+            margin-top: 16px;
+        }
+
+        footer .footer-right {
+            margin-bottom: -5px;
+        }
     }
 
-    .subscribe-form-field button {
-        flex-basis: 100%;
-        display:    block;
-        width:      100%;
-        margin-top: 16px;
+    @media screen and (max-width: 479px) {
+        .title {
+            font-size:   32px !important;
+            line-height: 38px;
+        }
+
+        .navbar .navbar-brand {
+            font-size: 30px !important;
+        }
+
+        .carousel-content h5 {
+            font-size:   32px;
+            line-height: 42px;
+        }
+
+        .bg-img {
+            min-height: 480px;
+        }
+
+        .number-item {
+            padding: 0 5px;
+        }
+
+        .pricing-content {
+            width: 80%;
+        }
+
+        ul.social-icons li {
+            margin: 0 5px !important;
+        }
+
+        footer .footer-right {
+            margin-top: 3rem;
+        }
     }
-}
