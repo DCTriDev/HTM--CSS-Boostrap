@@ -519,6 +519,26 @@ section.gallery a:hover span.hover-content .title {
   display: block;
   margin-bottom: 10px;
 }
+
+/* animate */
+.banner-slider .bg1 .banner-content h1,
+.banner-slider .bg2 .banner-content h1,
+.banner-slider .bg3 .banner-content h1,
+.banner-slider .bg4 .banner-content h1 {
+  animation-delay: 0.8s;
+  color: rgb(255, 255, 255);
+}
+.banner-slider .bg1 .banner-content a,
+.banner-slider .bg2 .banner-content a,
+.banner-slider .bg3 .banner-content a,
+.banner-slider .bg4 .banner-content a {
+  animation-delay: 1s;
+  color: rgb(255, 255, 255);
+}
+.banner-slider .bg2 .banner-content h1 {
+  animation-delay: 4s;
+}
+
 /* About Us */
 .title-small {
   font-size: 14px;
@@ -1289,5 +1309,55 @@ section.copyright {
   }
   .navbar-toggler-icon.fa::before {
     content: "";
+  }
+}
+/*============================Animations=============================*/
+@keyframes flipInX {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotateX(90deg);
+    animation-timing-function: ease-in;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-20deg);
+    animation-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotateX(10deg);
+  }
+  80% {
+    transform: perspective(400px) rotateX(-5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(400px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
   }
 }

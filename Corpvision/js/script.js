@@ -4,9 +4,29 @@ $(".banner-slider").slick({
   autoplaySpeed: 3000,
   infinite: true,
   speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  dots: false,
+  swipe: true,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        swipe: true,
+      },
+    },
+  ],
+  arrows: true,
   prevArrow: '<button class="banner-slickPrev"></button>',
   nextArrow: '<button class="banner-slickNext"></button>',
 });
+
 // Sticky header
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
