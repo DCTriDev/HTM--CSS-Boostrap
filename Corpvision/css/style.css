@@ -520,25 +520,6 @@ section.gallery a:hover span.hover-content .title {
   margin-bottom: 10px;
 }
 
-/* animate */
-.banner-slider .bg1 .banner-content h1,
-.banner-slider .bg2 .banner-content h1,
-.banner-slider .bg3 .banner-content h1,
-.banner-slider .bg4 .banner-content h1 {
-  animation-delay: 0.8s;
-  color: rgb(255, 255, 255);
-}
-.banner-slider .bg1 .banner-content a,
-.banner-slider .bg2 .banner-content a,
-.banner-slider .bg3 .banner-content a,
-.banner-slider .bg4 .banner-content a {
-  animation-delay: 1s;
-  color: rgb(255, 255, 255);
-}
-.banner-slider .bg2 .banner-content h1 {
-  animation-delay: 4s;
-}
-
 /* About Us */
 .title-small {
   font-size: 14px;
@@ -1312,7 +1293,7 @@ section.copyright {
   }
 }
 /*============================Animations=============================*/
-@keyframes flipInX {
+/* @keyframes flipInX {
   0% {
     opacity: 0;
     transform: perspective(400px) rotateX(90deg);
@@ -1360,4 +1341,4 @@ section.copyright {
     opacity: 1;
     transform: translateZ(0);
   }
-}
+} */
