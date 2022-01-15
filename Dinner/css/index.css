@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*header*/
 /* banner-with-header */
+/* darkmode đổi màu phần padding ??? */
 .banner {
     background-size: cover;
     background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
@@ -53,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
     background-position: initial;
     background-attachment: fixed;
     min-height: 700px;
+}
+.banner::before {
+    background: var(--bg-color);
+    z-index: -1;
 }
 .banner__header {
     display: grid;
@@ -92,6 +97,7 @@ h1 a.logo-brand:hover {
     background: var(--bg-color);
     outline: 0;
     border: 1px solid var(--bg-color);
+    font-family:'Quicksand', sans-serif;
 }
 .banner-right-content .search-bar .search .search__icon {
     position: absolute;
@@ -99,6 +105,7 @@ h1 a.logo-brand:hover {
     font-size: 15px;
     top: 15px;
     cursor: pointer;
+    color:var(--font-color);
 }
 /* menu popup */
 #trigger-overlay {
@@ -178,6 +185,9 @@ h1 a.logo-brand:hover {
     transition: opacity 0.3s ease-out;
   }
 /* banner-info */
+.content-1{
+    background: var(--bg-color);
+}
 .banner .banner-info {
     max-width: 600px;
     text-align: left;
@@ -223,11 +233,8 @@ h1 a.logo-brand:hover {
     width: 24px;
     height: 24px;
     padding: 0;
-    color: var(--bg-color);
+    color: #fff;
     cursor: pointer;
-  }
-  header.whiteHeader .dark-mode-btn {
-    color: #232220;;
   }
   .dark-mode-off {
     display: none;
@@ -242,14 +249,14 @@ h1 a.logo-brand:hover {
   
   .dark-mode-active .dark-mode-off {
     display: block;
-    color: var(--bg-color);
+    color: #FFF;
   }
 /* End phan dark mode  */
 
 /* bannerhny-info */
 /* content 1 */
 .content-1{
-    background: #fff;
+    background: var(--bg-color);
 }
 .content__title__1,.catogories__title__1 {
     font-size: 20px;
@@ -419,6 +426,7 @@ h1 a.logo-brand:hover {
 /* Home Services */
 .home-services {
     position: relative;
+    background-color: var(--bg-color);
 }
 .box-wrap {
     padding: 40px 40px;
@@ -523,6 +531,7 @@ h1 a.logo-brand:hover {
     margin-top: -70px;
     z-index: 10;
     position: relative;
+    background: var(--bg-color);
 }
 .counter {
     background-color: var(--bg-color);
@@ -564,6 +573,7 @@ p.count-text {
 /* video  */
 .new-block {
     background: var(--bg-color);
+    border:none;
 }
 .video__popup .history-info {
     background: url(../img/banner3.jpg) no-repeat center;
@@ -603,7 +613,7 @@ p.count-text {
     transition: 0.3s ease-in-out; 
     color: var(--primary-color);
     border: transparent;
-    background: var(--bg-color);
+    background: #fff;
 }
 .video__popup span.video-play-icon:hover {
     transform: scale(1.2);
@@ -633,6 +643,20 @@ p.count-text {
     background: var(--bg-grey);
 }
 /* blog post */
+.blogpost__text__1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.blogpost__text__2 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
 .blogpost .card {
     position: relative;
     word-wrap: break-word;
@@ -715,6 +739,9 @@ p.count-text {
 /* blog post */
 
 /* testimonials */
+.slider{
+    background: var(--bg-color);
+}
 .slider .testimonial-content {
     max-width: 700px;
     margin: auto;
@@ -750,16 +777,14 @@ p.count-text {
     object-fit: cover;
     object-position: center;
 }
-blockquote {
-    margin: 0 0 1rem;
-}
 .slider blockquote q::before {
     font-size: 50px;
     color: var(--primary-color);
     display: block;
     font-family: initial;
 }
-.w3l-clients blockquote q {
+.slider blockquote q {
+    margin: 0 0 1rem;
     font-size: 24px;
     line-height: 36px;
     color: var(--heading-color);
@@ -793,11 +818,11 @@ p {
     zoom: 1;
     background: transparent;
 }
+.owl-agency .owl-dots{
+    margin-top: 30px;
+}
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--primary-color);
-}
-#owl-agency{
-    padding-bottom: 2rem!important;
 }
 /* testimonials */
 
@@ -1073,5 +1098,154 @@ button#trigger-overlay {
     }
     .overlay ul li {
         line-height: 2.2em;
+    }
+}
+
+/* dark mode */
+
+/* dark mode */
+
+/*============================Responsive=============================*/
+/*Container*/
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+/* containter  */
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+        margin:    0 auto;
+        padding:   0 15px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .banner-right-content {
+        grid-gap: 0;
+    }
+    .banner .banner-info {
+        max-width: 600px;
+        text-align: left;
+        margin-top: 100px;
+    }  
+    .banner .banner-info h3 {
+        font-size: 54px;
+        line-height: 64px;
+    }
+    
+    .blogpost__text__2{
+        font-size: 32px !important;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .agent-block-image {
+        min-height: 200px;
+    }
+    
+    .slider__text__2 {
+        font-size: 32px !important;
+        line-height: 40px;
+    }
+    .footer h6.footer__title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .agent__block__title__2 {
+        font-size: 32px !important;
+        line-height: 40px;
+    }
+    .content__title__2, .catogories__title__2 {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 600;
+    }
+    .agent__box .agent__box__link{
+        font-size: 18px;
+    }
+    .copyright p.copyright__footer {
+        text-align: center;
+    }
+    button:focus {
+        outline: 1px dotted;
+        outline: 5px auto;
+      }
+      .box-wrap h4 a {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 991px) {
+        .banner .banner-info {
+            max-width: 600px;
+            text-align: left;
+            margin-top: 100px;
+        }  
+        .banner .banner-info h3 {
+            font-size: 44px;
+            line-height: 53px;
+        }    
+}
+@media only screen and (max-width: 768px) {
+    .banner .banner-info h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .categories .content-left-sec a h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .categories .gal-slide-info span {
+        font-size: 16px;
+    }
+    .welcome-left h3 {
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 100%;
+    }
+    .video__popup .history-info {
+        min-height: 400px;
+    }
+    .blogpost a.blog-desc{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .banner {
+        min-height: 600px;
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .banner .banner-info h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .search-bar {
+        display:none;
     }
 }
