@@ -19,3 +19,24 @@ function scrollFunction() {
 document.querySelector('#back-to-top').addEventListener('click', function () {
     window.scrollTo({top: 0, behavior: "smooth"})
 })
+
+let btn_dark_mode = document.querySelector("#btn-dark-mode");
+
+btn_dark_mode.addEventListener("click", function () {
+    //switch icon
+    btn_dark_mode.classList.toggle("dark-mode-active");
+
+    //Background when dark mode active
+    if (btn_dark_mode.classList.contains("dark-mode-active")) {
+        // document.documentElement.style.setProperty("--bg-color", "#131313");
+        // document.documentElement.style.setProperty("--font-color", "#BBB");
+        //document.body.style.background = 'black';
+    }
+
+    //Background when light mode active
+    else {
+        // document.documentElement.style.setProperty("--bg-color", "#FBFCFD")
+        // document.documentElement.style.setProperty("--font-color", "#111")
+        //document.body.style.background = 'white';
+    }
+});

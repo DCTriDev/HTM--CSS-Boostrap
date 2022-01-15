@@ -29,14 +29,6 @@ ul.resp-tabs-list, p {
     padding: 0;
 }
 
-/*.container {*/
-/*    width: 100%;*/
-/*    padding-right: 15px;*/
-/*    padding-left: 15px;*/
-/*    margin-right: auto;*/
-/*    margin-left: auto;*/
-/*}*/
-
 button, .btn, select {
     cursor:      pointer;
     font-family: 'Nunito', sans-serif;
@@ -304,6 +296,22 @@ header .navbar-nav .dropdown-menu:before {
     top:           -7px;
     left:          49%;
     z-index:       1001;
+}
+
+#btn-dark-mode {
+    cursor:     pointer;
+    color:      var(--primary);
+    font-size:  25px;
+    margin-right: 0 !important;
+    line-height: 38px;
+}
+
+.dark-mode-on, .dark-mode-active .dark-mode-off {
+    display: block;
+}
+
+.dark-mode-off, .dark-mode-active .dark-mode-on {
+    display: none;
 }
 
 /*Banner*/
@@ -1292,7 +1300,7 @@ footer ul.social li a:hover {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 575px) {
     .banner-left h3 {
         font-size:   40px;
         line-height: 45px;
