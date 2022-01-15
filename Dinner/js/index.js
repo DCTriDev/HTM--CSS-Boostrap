@@ -98,5 +98,6 @@ btn_dark_mode.addEventListener("click", function () {
       "--bg-light",
       "rgba(130, 115, 252, .05)"
     );
+    document.querySelector("body").style.backgroundColor = "#fff";
   }
 });
